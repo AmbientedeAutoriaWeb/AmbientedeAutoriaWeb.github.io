@@ -1,0 +1,278 @@
+﻿<html>
+<head>
+<script src="./jquery-1.12.1.min.js" ></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <title>Ambiente de Autoria Web</title>
+  <meta charset=utf-8"/>
+</head>
+<body>
+
+<font size="3" face="Verdana">
+<ul class="list-group">
+  <li class="list-group-item list-group-item-info">Ambiente de Autoria Web</li>
+ 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html"><font size="3" face="Verdana">Home </font><span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Casos de Uso </font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../casosdeusoversaoum.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="../casosdeusoversaodois.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="../casosdeusoversaotres.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+           </ul>
+        </li>
+    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Interfaces</font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../versao1/telas1.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="../versao2/telas1.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="../versao3/telas1.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+      <li><a href="../comparacao/telas1.html"><font size="3" face="Verdana">Comparação de Versões</font></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</ul>
+  
+  
+  
+<ul class="nav nav-pills">
+  <li role="presentation"><a href="telas1.html">Acesso ao Ambiente</a></li>
+  <li role="presentation"><a href="telas2.html">Projeto</a></li>
+  <li role="presentation"><a href="telas3.html">Unidade</a></li>
+  <li role="presentation"><a href="telas4.html">Material Motivador</a></li>
+  <li role="presentation" class="active"><a href="#">Tarefa</a></li>
+  <li role="presentation"><a href="telas6.html">Dicionário</a></li>
+  <li role="presentation"><a href="telas7.html">Ajuda</a></li>
+</ul>
+<div class="page-header">
+  <h1>Interfaces<small> Terceira Versão</small></h1>
+</div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Criar Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Criar Tarefa permite ao professor elaborar tarefas sobre os materiais motivadores. A seguir são apresentadas as telas referentes a esta funcionalidade. 
+</br></br>
+A Figura 1 mostra o formulário de criação de tarefas. Para criar uma tarefa, primeiramente, o professor deve selecionar o tipo de questão que deseja criar no campo Tipo de Questão. </p>
+
+ <div align="center"> <img src="imagem3/CriarTarefa.png" title="Tela Formulário criar tarefa." alt="Tela Formulário criar tarefa."/><figcaption>Figura 1. Tela Formulário criar tarefa.</figcaption></div>
+   </br>
+
+   <p align="justify">Ao selecionar a opção Dissertativa, o ambiente exibe o formulário para a criação da tarefa, como na Figura 2. Este formulário conta com um único campo, Enunciado. O professor pode salvar a tarefa ou imprimir ela. 
+</p>
+
+ <div align="center"> <img src="imagem3/Dissertativa.png" title="Tela Formulário de questão dissertativa." alt="Tela Formulário de questão dissertativa."/><figcaption>Figura 2. Tela Formulário de questão dissertativa.</figcaption></div>
+   </br>
+<p align="justify">Caso o professor não informe o campo Enunciado e pressione o botão Salvar Tarefa, o ambiente apresenta uma mensagem de alerta e destaca o campo Enunciado, como na Figura 3.</p>
+
+ <div align="center"> <img src="imagem3/Dissertativa2.png" title="Tela Mensagem Alerta de campo enunciado não informado." alt="Tela Mensagem Alerta de campo enunciado não informado."/><figcaption>Figura 3. Tela Mensagem Alerta de campo enunciado não informado.</figcaption></div>
+   </br>
+
+<p align="justify"> Ao escolher a questão associativa o ambiente apresenta o formulário exibido na Figura 4. Este formulário é composto pelo enunciado e as opões da coluna A e da Coluna B. Nesta tela, o professor pode salvar ou imprimir a tarefa.   </p>
+ <div align="center"> <img src="imagem3/Associativa.png" title="Tela Formulário de questão associativa." alt="Tela Formulário de questão associativa."/><figcaption>Figura 4. Tela Formulário de questão associativa.</figcaption></div>
+   </br>
+
+<p align="justify">Caso o professor não preencha os campos obrigatórios no formulário da questão associativa, o ambiente destaca os campos obrigatórios e exibe uma mensagem de alerta, como na Figura 5.</p>
+
+<div align="center"> <img src="imagem3/Associativa24.png" title="Tela Mensagem alerta de campo enunciado e ao menos duas opções não informados para associação." alt="Tela Mensagem alerta de campo enunciado e ao menos duas opções não informados para associação."/><figcaption>Figura 5. Tela Mensagem alerta de campo enunciado e ao menos duas opções não informados para associação.</figcaption></div>
+   </br>
+<p align="justify">A Figura 6. mostra o formulário para a criação da questão resposta curta. Este formulário é composto pelo campo Enunciado. Ao criar a tarefa, o professor pode salvar ou imprimir a tarefa. </p>   
+<div align="center"> <img src="imagem3/RespostaCurta.png" title="Tela Formulário de questão resposta curta." alt="Tela Formulário de questão resposta curta."/><figcaption>Figura 6. Tela Formulário de questão resposta curta.</figcaption></div></br>
+
+<p align="justify">Para criar uma questão de resposta curta o professor deve preencher o campo obrigatório, se o professor não preencher o ambiente destaca o campo Enunciado e exibe uma mensagem de alerta, como na Figura 7.</p>
+<div align="center"> <img src="imagem3/RespostaCurta2.png" title="Tela Mensagem Alerta de campo enunciado não informado na resposta curta." alt="Tela Mensagem Alerta de campo enunciado não informado na resposta curta."/><figcaption>Figura 7. Tela Mensagem Alerta de campo enunciado não informado na resposta curta.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 8. exibe o formulário para a criação de uma questão certo ou errado. Este formulário é composto pelo enunciado e pelas frases que compõem a tarefa. Nesta tela o professor pode imprimir ou salvar a tarefa. </p>
+
+<div align="center"> <img src="imagem3/CertoOuErradoC.png" title="Tela Formulário de questão certo ou errado" alt="Tela Formulário de questão certo ou errado"/><figcaption>Figura 8. Tela Formulário de questão certo ou errado</figcaption></div>
+</br>
+<p align="justify">Na questão certo ou errado o professor pode adicionar frases ao criar a questão, pressionando o botão + Frases, como na Figura 9.</p>
+<div align="center"> <img src="imagem3/CertoOuErrado2.png" title="Tela Adicionado uma frase a questão certo ou errada." alt="Tela Adicionado uma frase a questão certo ou errada."/><figcaption>Figura 9. Tela Adicionado uma frase a questão certo ou errada.</figcaption></div>
+</br>
+
+<p align="justify">Caso o professor não preencha todos os campos obrigatórios ao criar uma questão certo ou errado, o ambiente destaca os campos não preenchidos e exibe uma mensagem de alerta, como na Figura 10.</p>
+
+<div align="center"> <img src="imagem3/CertoOuErrado28.png" title="Tela Mensagem alerta de campo enunciado e frase não informados na questão certo ou errada." alt="Tela Mensagem alerta de campo enunciado e frase não informados na questão certo ou errada."/><figcaption>Figura 10. Tela Mensagem alerta de campo enunciado e frase não informados na questão certo ou errada.</figcaption></div>
+</br>
+<p align="justify">A Figura 11. mostra o formulário de criação da questão complete. Este formulário é composto pelo enunciado e o texto. Nesta questão o professor pode retirar a pontuação do texto, retirar acentuações e retirar palavras. Além disso, o professor pode tanto salvar a tarefa quanto imprimir-la. </p>
+
+<div align="center"> <img src="imagem3/Complete.png" title="Tela Formulário de questão complete." alt="Tela Formulário de questão complete."/><figcaption>Figura 11. Tela Formulário de questão complete.</figcaption></div>
+</br>
+
+<p align="justify">Caso o professor não preencha os campos Enunciado e Texto da questão complete e pressione o botão Salvar Tarefa, o ambiente destaca estes campos e exibe uma mensagem de alerta, como na Figura 12.</p>
+
+<div align="center"> <img src="imagem3/Complete39.png" title="Tela Mensagem alerta de campo enunciado e texto não informados na questão complete." alt="Tela Mensagem alerta de campo enunciado e texto não informados na questão complete."/><figcaption>Figura 12. Tela Mensagem alerta de campo enunciado e texto não informados na questão complete.</figcaption></div>
+</br>
+<p align="justify">O formulário da questão destaque de palavras é exibido na Figura 13. Este formulário é composto pelos campos Enunciado e Texto. </p>
+<div align="center"> <img src="imagem3/DestaquePalavras.png" title="Tela Formulário de questão destaque de palavras." alt="Tela Formulário de questão destaque de palavras."/><figcaption>Figura 13. Tela Formulário de questão destaque de palavras.</figcaption></div>
+</br>
+
+<p align="justify">Ao criar uma questão de destaque de palavras o professor deve preencher todos os campos obrigatórios. Caso não preencha o ambiente destaca os campos e exibe uma mensagem de alerta, como na Figura 14</p>
+
+<div align="center"> <img src="imagem3/DestaquePalavras16.png" title="Tela Mensagem alerta de campo enunciado e texto não informados na questão destaque de palavras." alt="Tela Mensagem alerta de campo enunciado e texto não informados na questão destaque de palavras."/><figcaption>Figura 14. Tela Mensagem alerta de campo enunciado e texto não informados na questão destaque de palavras.</figcaption></div>
+</br>
+<p align="justify">No ambiente, o professor pode criar questões do tipo múltipla escolha. A Figura 15 apresenta o formulário da questão múltipla escolha. Este formulário é composto pelo enunciado e pelas opções de resposta. Neste formulário o professor pode adicionar mais opções na questão pressionando o botão + Opções. </p>
+
+<div align="center"> <img src="imagem3/MultiplaEscolha.png" title="Tela Formulário de questão multipla escolha." alt="Tela Formulário de questão multipla escolha."/><figcaption>Figura 15. Tela Formulário de questão multipla escolha.</figcaption></div>
+</br>
+<p align="justify">A Figura 16 mostra o formulário da questão múltipla escolha com mais uma opção de frase. </p>
+<div align="center"> <img src="imagem3/MultiplaEscolha14.png" title="Tela Adicionado um campo opção a questão multipla escolha." alt="Tela Adicionado um campo opção a questão multipla escolha."/><figcaption>Figura 16. Tela Adicionado um campo opção a questão multipla escolha.</figcaption></div>
+</br>
+
+<p align="justify">Ao criar uma questão múltipla escolha o professor deve informar todos os campos obrigatórios. Caso não informe, o ambiente destaca os campos e exibe uma mensagem de alerta, como na Figura 17.</p>
+
+<div align="center"> <img src="imagem3/MultiplaEscolha26.png" title="Tela Mensagem alerta de campo enunciado e opções não informados na questão múltipla escolha." alt="Tela Mensagem alerta de campo enunciado e opções não informados na questão múltipla escolha."/><figcaption>Figura 17. Tela Mensagem alerta de campo enunciado e opções não informados na questão múltipla escolha.</figcaption></div>
+</br>
+
+<p align="justify">Ao salvar uma tarefa criada, o ambiente apresenta apresenta uma mensagem de confirmação de tarefa criada, como na Figura 18.</p>
+
+<div align="center"> <img src="imagem3/tarefaSalva.png" title="Tela Mensagem Alerta de tarefa salva com sucesso." alt="Tela Mensagem Alerta de tarefa salva com sucesso."/><figcaption>Figura 18. Tela Mensagem Alerta de tarefa salva com sucesso.</figcaption></div>
+</br>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Editar Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Editar Tarefa permite que o professor altere as tarefas já criadas. A seguir são apresentadas as telas referentes a esta funcionalidade.
+</br></br>
+A Figura 19. exibe as listas de tarefas relacionadas com o material motivador aberto. Nesta tela o professor encontra as opções: criar tarefa, corrigir tarefa e imprimir tarefas.   </p>
+<div align="center"> <img src="imagem3/TarefaSalva3.png" title="Tela Material Motivador e as tarefas associadas a ele."/><figcaption>Figura 19. Tela Material Motivador e as tarefas associadas a ele.</figcaption></div>
+</br>
+<p align="justify">Para editar uma tarefa o professor deve pressionar o botão editar, assim o ambiente habilita a edição da tarefa, como na Figura 20.</p>
+<div align="center"> <img src="imagem3/EditarTarefa2.png" title="Tela Editar tarefas associadas ao material motivador."/><figcaption>Figura 20. Tela Editar tarefas associadas ao material motivador.</figcaption></div>
+</br>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Excluir Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Excluir Tarefa permite que o professor exclua as tarefas criadas por ele. A seguir são apresentadas das telas referentes a esta funcionalidade. 
+</br></br>
+Para excluir uma tarefa o professor precisa pressionar o Botão X relacionado a tarefa. Ao executar esta ação o ambiente apresenta uma mensagem para o professor confirmar a ação, como na Figura 21.</p>
+<div align="center"> <img src="imagem3/ExcluirTarefa.png" title="Tela Mensagem de confirmação de exclusão de tarefa."/><figcaption>Figura 21. Tela Mensagem de confirmação de exclusão de tarefa.</figcaption></div>
+</br>
+<p align="justify">Quando o professor confirma a ação de excluir a tarefa, o ambiente exibe uma mensagem de confirmando a exclusão, como na Figura 22.</p>
+<div align="center"> <img src="imagem3/ExcluirTarefa2.png" title="Tela Mensagem de tarefa excluída com sucesso."/><figcaption>Figura 22. Tela Mensagem de tarefa excluída com sucesso.</figcaption></div>
+</br>
+
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Realizar Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+
+<p align="justify">A funcionalidade Realizar Tarefa permite ao aluno realizar as tarefas propostas pelo professor. A seguir são apresentadas as telas referentes a funcionalidade Realizar Tarefa. 
+</br></br>
+A Figura 23 exibe as tarefas associadas ao material motivador aberto. </p>
+<div align="center"> <img src="imagem3/RealizarTarefa.png" title="Tela Lista de tarefas associadas ao material motivador." alt="Tela Lista de tarefas associadas ao material motivador."/><figcaption>Figura 23. Tela Lista de tarefas associadas ao material motivador.</figcaption></div>
+</br>
+<p align="justify">A Figura 24. exibe as tarefas associadas ao material motivador aberto que o aluno já realizou.</p>
+
+<div align="center"> <img src="imagem3/TarefasRealizadas.png" title="Tela Tarefas já realizadas." alt="Tela Tarefas já realizadas."/><figcaption>Figura 24. Tela Tarefas já realizadas.</figcaption></div>
+</br>
+
+<p align="justify">Quando as tarefas realizadas pelos alunos já foram corrigidas, o aluno pode consultar as correções e a nota de cada tarefa, como na Figura 25.</p>
+
+<div align="center"> <img src="imagem3/TarefasCorrigidas.png" title="Tela Tarefas corrigidas." alt="Tela Tarefas corrigidas."/><figcaption>Figura 25. Tela Tela Tarefas corrigidas.</figcaption></div>
+</br>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Corrigir Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+
+<p align="justify">O ambiente permite que o professor corrija as tarefas realizadas pelos alunos. A seguir são apresentadas as telas relacionadas a funcionalidade Corrigir Tarefa. 
+</br></br>
+
+Após o professor pressionar o botão Corrigir Tarefas, o ambiente exibe as tarefas como na Figura 26. Cada enunciado é um link que leva o professor a tela de correção da tarefa selecionada. </p>
+
+<div align="center"> <img src="imagem3/CorrigirTarefa.png" title="Tela Correção de tarefas." alt="Tela Correção de tarefas."/><figcaption>Figura 26. Tela Correção de tarefas.</figcaption></div></br>
+
+<p align="justify">Ao clicar sobre um enunciado, o ambiente apresenta a tela de correção da tarefa selecionada, como na Figura 27. Esta tela apresenta todas as respostas atribuídas a esta tarefa por aluno. O professor pode informar correções sobre a questão que serão exibidas aos alunos e uma nota para cada resposta. </p>
+
+<div align="center"> <img src="imagem3/RespostasTarefa.png" title="Tela Correção uma tarefa com todas as respostas." alt="Tela Correção uma tarefa com todas as respostas."/><figcaption>Figura 27. Tela Correção uma tarefa com todas as respostas.</figcaption></div></br>
+<p align="justify">Caso o professor tenha aplicado o projeto aberto em mais de uma escola, o professor pode buscar as resposta da questão escolhida por Escola, como na Figura 28.</p>
+
+<div align="center"> <img src="imagem3/RespostasTarefaEscola.png" title="Tela Seleção escola por tarefa." alt="Tela Seleção escola por tarefa."/><figcaption>Figura 28. Tela Seleção escola por tarefa.</figcaption></div></br>
+
+<p align="justify">Além do filtro escola o professor pode utilizar o filtro Turma para buscar as respostas dos alunos, como na Figura 30.</p>
+
+<div align="center"> <img src="imagem3/RespostasTarefaTurma.png" title="Tela Seleção escola e turma por tarefa." alt="Tela Seleção escola e turma por tarefa."/><figcaption>Figura 29. Tela Seleção escola e turma por tarefa.</figcaption></div></br>
+
+<p align="justify">Ao utilizar os filtros Escola e Turma, o ambiente apresenta a lista de respostas como na Figura 30.</p>
+
+<div align="center"> <img src="imagem3/RespostasTarefaListaEscolasTurmas.png" title="Tela Lista de respostas por tarefa, escola e turma." alt="Tela Lista de respostas por tarefa, escola e turma."/><figcaption>Figura 30. Tela Lista de respostas por tarefa, escola e turma.</figcaption></div></br>
+
+<p align="justify">A Figura 31. apresenta a tela com as correções e notas atribuídas pelo professor. </p>
+
+<div align="center"> <img src="imagem3/RespostasTarefaCorrigida.png" title="Tela Respostas corrigidas." alt="Tela Respostas corrigidas."/><figcaption>Figura 31. Tela Respostas corrigidas.</figcaption></div></br>
+
+<p align="justify">Ao salvar as correções das tarefas, o ambiente exibe uma mensagem de confirmação da ação, como na Figura 32.</p>
+
+<div align="center"> <img src="imagem3/CorrecaoSalvaSucesso.png" title="Tela Mensagem de alerta de correções salvar com sucesso." alt="Tela Mensagem de alerta de correções salvar com sucesso."/><figcaption>Figura 32. Tela Mensagem de alerta de correções salvar com sucesso.</figcaption></div></br>
+
+<p align="justify">Caso o professor deixe de preencher as notas das respostas fornecidas pelos alunos, o ambiente destaca o campo Nota e exibe uma mensagem de alerta, como na Figura 33.</p>
+
+<div align="center"> <img src="imagem3/NotaBranco.png" title="Tela Mensagem de alerta de notas não informadas." alt="Tela Mensagem de alerta de notas não informadas."/><figcaption>Figura 33. Tela Mensagem de alerta de notas não informadas.</figcaption></div></br>
+</div>
+</div>
+</div>
+</div>
+</font>
+</body>
+</html>

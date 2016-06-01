@@ -1,0 +1,8 @@
+[user]
+	name = Ambiente de Autoria Web
+	email = ambienteautoriaweb@gmail.com
+[alias]
+	co = checkout
+	ci = commit -S
+	st = status -s
+	tag = tag -s

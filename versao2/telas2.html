@@ -1,0 +1,399 @@
+﻿<html>
+
+<head>
+<script src="./jquery-1.12.1.min.js" ></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <title>Ambiente de Autoria Web</title>
+  <meta charset=utf-8"/>
+</head>
+<body>
+<font size="3" face="Verdana">
+<ul class="list-group">
+  <li class="list-group-item list-group-item-info">Ambiente de Autoria Web</li>
+ 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+     <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html"><font size="3" face="Verdana">Home </font><span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Casos de Uso </font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../casosdeusoversaoum.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="../casosdeusoversaodois.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="../casosdeusoversaotres.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+           </ul>
+        </li>
+    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Interfaces</font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../versao1/telas1.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="../versao2/telas1.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="../versao3/telas1.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+      <li><a href="../comparacao/telas1.html"><font size="3" face="Verdana">Comparação de Versões</font></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</ul>
+  
+  
+<ul class="nav nav-pills">
+  <li role="presentation"><a href="telas1.html">Acesso ao Ambiente</a></li>
+  <li role="presentation" class="active"><a href="#">Projeto</a></li>
+  <li role="presentation"><a href="telas3.html">Unidade</a></li>
+  <li role="presentation"><a href="telas4.html">Material Motivador</a></li>
+  <li role="presentation"><a href="telas5.html">Tarefa</a></li>
+  <li role="presentation"><a href="telas6.html">Dicionário</a></li>
+  <li role="presentation"><a href="telas7.html">Ajuda</a></li>
+</ul>
+
+<div class="page-header">
+  <h1>Interfaces <small>Segunda Versão</small></h1>
+</div>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Criar Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+<p align="justify">Com a funcionalidade Criar Projeto, o professor pode elaborar os seus projetos de estudos para serem trabalhados com os alunos. Esta funcionalidade é disponível somente para o perfil professor. A seguir são apresentadas as telas que compõem está funcionalidade.
+</p>
+
+<p align="justify">A Figura 1. mostra o formulário com os dados a serem preenchidos para a criação de um projeto de estudo. Este formulário é composto pelos campos Nome, Descrição, Área do Conhecimento e Escola. Os campos do formulário marcados com asterisco '*' são de preenchimento obrigatório. Nesta tela o professor, também, pode interagir com o menu horizontal e com a barra de pesquisa de projetos.</p>
+
+<div align="center"> <img src="imagem2/CriarProjeto1.png" title="Tela formulário de criação de projeto." alt="Tela formulário de criação de projeto."/><figcaption>Figura 1. Tela formulário de criação de projeto.</figcaption></div>
+   </br>
+
+<p align="justify">Ao criar um projeto o professor deve associar conteúdos a ele. Para isso, o professor deve selecionar uma área do conhecimento. Como na Figura 2., área do conhecimento 'História' esta selecionada e o ambiente apresentou a lista de conteúdos relacionados a esta área em uma caixa de diálgo. O professor deve marcar os conteúdos que deseja e pressionar o botão "Incluir Conteúdos". </p>
+
+<div align="center"> <img src="imagem2/CriarProjeto31.png" title="Tela Associação de conteúdos ao projeto." alt="Tela Associação de conteúdos ao projeto."/><figcaption>Figura 2. Tela Associação de conteúdos ao projeto.</figcaption></div>
+   </br>
+
+<p align="justify">Para que o professor possa aplicar o projeto criado nas turmas que deseja é necessário associar turmas ao projeto. Para realizar esta ação o professor deve selecionar uma escola para que o ambiente apresente uma lista com as turmas relacionadas a esta escola em uma caixa de diálgo, como na Figura 3. O professor deve marcar as turmas que deseja aplicar o projeto e pressionar o botão "Incluir Turmas".</p>
+
+<div align="center"> <img src="imagem2/CriarProjeto3.png" title="Tela Associação de turmas ao projeto." alt="Tela Associação de turmas ao projeto."/><figcaption>Figura 3. Tela Associação de turmas ao projeto.</figcaption></div>
+   </br>
+
+<p align="justify">Após o professor preencher o formulário de criação de projeto corretamente e pressionar o botão "Salvar Projeto", o ambiente cria o projeto e exibe uma mensagem de alerta como na Figura 4.</p>
+
+<div align="center"> <img src="imagem2/CriarProjeto7.png" title="Tela Mensagem de Alerta de projeto criado com sucesso." alt="Tela Mensagem de Alerta de projeto criado com sucesso."/><figcaption>Figura 4. Tela Mensagem de Alerta de projeto criado com sucesso.</figcaption></div>
+   </br>
+
+<p align="justify">Caso o professor não preencha os campos obrigatórios ao criar um projeto e pressione o botão Salvar Projeto, o ambiente apresenta na tela uma mensagem de alerta e destaca os campos obrigatórios, como na Figura 5.</p>
+
+<div align="center"> <img src="imagem2/CriarProjeto6.png" title="Tela Mensagem de Alerta de campos obrigatórios não preenchidos." alt="Tela Mensagem de Alerta de campos obrigatórios não preenchidos."/><figcaption>Figura 5. Tela Mensagem de Alerta de campos obrigatórios não preenchidos.</figcaption></div>
+   </br>
+
+<p align="justify">Após o professor selecionar os conteúdos que deseja adicionar ao projeto e pressicionar o botão "Incluir Conteúdos", o ambiente apresenta uma mensagem de confirmação da ação, como na Figura 6.</p>
+
+<div align="center"> <img src="imagem2/CriarProjeto32.png" title="Tela Mensagem de Confirmação de inclusão de conteúdos." alt="Tela Mensagem de Confirmação de inclusão de conteúdos."/><figcaption>Figura 6. Tela Mensagem de Confirmação de inclusão de conteúdos.</figcaption></div>
+   </br>
+
+<p align="justify">Ao incluir turmas ao projeto, o ambiente apresenta uma mensagem de confirmação da ação, como na Figura 7.</p>
+
+<div align="center"> <img src="imagem2/CriarProjeto34.png" title="Tela Mensagem de Confirmação de inclusão de turmas." alt="Tela Mensagem de Confirmação de inclusão de turmas."/><figcaption>Figura 7. Tela Mensagem de Confirmação de inclusão de turmas.</figcaption></div>
+   </br>
+      </div>
+    </div>
+  </div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Meus Projetos
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Meus Projetos é responsável por listar os projetos relacionados ao usuário autenticado no ambiente. 
+A seguir são apresentadas as telas relacionadas a esta funcionalidade.
+</br></br>
+A Figura 8. apresenta a lista de projetos relacionados ao professor autenticado no ambiente. Nesta interface o professor pode visualizar todos os projetos relacionados a ele, excluir os projetos e abrir os projetos. Nesta versão esta tela é a página incial do ambiente para o perfil professor</p>
+
+<div align="center"> <img src="imagem2/CriarProjeto.png" title="Tela Meus projetos relacionados ao professor que está autenticado no ambiente." alt="Tela Meus projetos relacionados ao professor que está autenticado no ambiente."/><figcaption>Figura 8. Tela Meus projetos relacionados ao professor que está autenticado no ambiente.</figcaption></div>
+</br>
+
+<p align="justify">Para navegar pelos projetos relacionados ao professor autenticado no ambiente, também, é possível utilizar os filtros Escola e Turmas, como na Figura 9. O ambiente só exibe o filtro Turma após o professor selecionar uma escola no campo Escola. </p>
+
+<div align="center"> <img src="imagem2/ListarProjeto8.png" title="Tela Lista de projetos utilizando filtros." alt="Tela Lista de projetos utilizando filtros."/><figcaption>Figura 9. Tela Lista de projetos utilizando filtros.</figcaption></div>
+</br>
+
+<p align="justify">Caso o professor selecione opções nos filtros que não tenham nenhum projeto relacionado, o ambiente apresenta uma mensagem como na Figura 10.</p>
+
+<div align="center"> <img src="imagem2/ListarProjeto3.png" title="Tela Mensagem nenhum projeto encontrado." alt="Tela Mensagem nenhum projeto encontrado."/><figcaption>Figura 10. Tela Mensagem nenhum projeto encontrado.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 11. exibe a lista de projetos relacionados ao aluno autenticado no ambiente de autoria Web. </p>
+
+<div align="center"> <img src="imagem2/ListarProjeto13.png" title="Tela Lista de projetos relacionados ao aluno que está autenticado no ambiente." alt="Tela Lista de projetos relacionados ao aluno que está autenticado no ambiente."/><figcaption>Figura 11. Tela Lista de projetos relacionados ao aluno que está autenticado no ambiente.</figcaption></div>
+</br>
+
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Editar Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Editar Projeto tem o objetivo de permitir que os professores editem os projetos criados por eles. A seguir são apresentados as telas referentes a esta funcionalidade. 
+</br></br>
+A Figura 12 mostra a interface do projeto com os campos Nome e Descrição do mesmo preenchidos pelo professor ao criar o projeto. Este formulário, também, apresenta o campo Avaliação para que o professor possa avaliar o projeto. Nesta interface o professor pode interagir com os menus horizontais. O menu horizontal do projeto é composto pelos itens: Unidades, Dados do Proejto, Conteúdos, Turmas, Compartilhar Autoria e Publicar Projto.</p>
+
+<div align="center"> <img src="imagem2/EditarProjeto.png" title="Tela Dados do Projeto." alt="Tela Dados do Projeto."/><figcaption>Figura 12. Tela Dados do Projeto.</figcaption></div>
+</br>
+
+<p align="justify">Caso o professor edite os dados do projeto e deixe os campos obrigatórios em branco o ambiente apresenta uma mensagem de alerta e destaca os campos, como na Figura 13.</p>
+
+<div align="center"> <img src="imagem2/EditarProjeto2.png" title="Tela Mensagem de Alerta de campos obrigatórios não preenchidos." alt="Tela Mensagem de Alerta de campos obrigatórios não preenchidos."/><figcaption>Figura 13. Tela Mensagem de Alerta de campos obrigatórios não preenchidos.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 14. exibe a tela com os conteúdos associados ao projeto. Nesta interface o professor pode excluir os conteúdos associados ao projeto e adicionar novos conteúdos. </p>
+
+<div align="center"> <img src="imagem2/EditarProjetoConteudo7.png" title="Tela Conteúdos associados ao projeto." alt="Tela Conteúdos associados ao projeto."/><figcaption>Figura 14. Tela Conteúdos associados ao projeto.</figcaption></div>
+</br>
+
+<p align="justify">Para o professor associar novos conteúdos ao projeto é necessário escolher uma área do conhecimento para que o ambiente liste os conteúdos relacionados a esta área, como na Figura 15. </p>
+
+<div align="center"> <img src="imagem2/EditarProjetoConteudo9.png" title="Tela Associação de conteúdos ao projeto." alt="Tela Associação de conteúdos ao projeto."/><figcaption>Figura 15. Tela Associação de conteúdos ao projeto.</figcaption></div>
+</br>
+
+<p align="justify">O ambiente apresenta uma mensagem de confimação com a lista de conteúdos marcados para que o professor confirme a inclusão dos projetos, como na Figura 16.</p>
+
+<div align="center"> <img src="imagem2/EditarProjetoConteudo10.png" title="Tela Mensagem confirmação da inclusão dos conteúdos ao projeto." alt="Tela Mensagem confirmação da inclusão dos conteúdos ao projeto."/><figcaption>Figura 16. Tela Mensagem confirmação da inclusão dos conteúdos ao projeto.</figcaption></div>
+</br>
+
+
+<p align="justify">Quando o professor excluir um conteúdo associado ao projeto o ambiente exibe uma mensagem de alerta, como na Figura 17.</p>
+
+<div align="center"> <img src="imagem2/EditarProjetoConteudo13.png" title="Tela Mensagem de Confirmação de exclusão de conteúdo associado ao projeto." alt="Tela Mensagem de Confirmação de exclusão de conteúdo associado ao projeto."/><figcaption>Figura 17. Tela Mensagem de Confirmação de exclusão de conteúdo associado ao projeto.</figcaption></div>
+</br>
+
+<p align="justify">O professor pode visualizar as turmas associadas ao projeto, como na Figura 18. Nesta tela o professor pode adicionar novas turmas ou remover. </p>
+
+<div align="center"> <img src="imagem2/EditarProjetoTurma8.png" title="Tela Turmas associadas ao projeto." alt="Tela Turmas associadas ao projeto."/><figcaption>Figura 18. Tela Turmas associadas ao projeto.</figcaption></div>
+</br>
+
+<p align="justify">Caso o professor deseje associar novas turmas ao projeto é preciso primeiramente selecionar uma escola no campo Escola para que o ambiente liste as turmas que o professor ministra aula na escola seleciona, como na Figura 19.</p>
+
+<div align="center"> <img src="imagem2/EditarProjetoTurma9.png" title="Tela Associação de turmas ao projeto." alt="Tela Associação de turmas ao projeto."/><figcaption>Figura 19.Tela Associação de turmas ao projeto.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 20. exibe a mensagme de confirmação para  inclusão de turmas ao projeto.</p>
+
+<div align="center"> <img src="imagem2/EditarProjetoTurma10.png" title="Tela Mensagem de Confirmação de inclusão de turma ao projeto." alt="Tela Mensagem de Confirmação de inclusão de turma ao projeto."/><figcaption>Figura 20.Tela Mensagem de Confirmação de inclusão de turma ao projeto.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 21. apresenta a mensagem de alerta apresentada pelo ambiente quando o professor excluir uma turma relacionada ao projeto.</p>
+
+<div align="center"> <img src="imagem2/EditarProjetoTurma12.png" title="Tela Mensagem de Confirmação de exclusão de turma associada ao projeto." alt="Tela Mensagem de Confirmação de exclusão de turma associada ao projeto."/><figcaption>Figura 21. Tela Mensagem de Confirmação de exclusão de turma associada ao projeto.</figcaption></div>
+</br>
+
+      </div>
+    </div>
+  </div>
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Excluir Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+
+<p align="justify">O ambiente permite que o usuário exclua os projetos associados a ele. A funcionalidade responsável por isso é a Excluir Projeto. Esta funcionalidade é disponível somente para o perfil professor. A seguir são mostradas as telas desta funcionalidade. 
+</br></br>
+Caso o professor deseja excluir um projeto, ele deve ir até a tela com a lista de projetos relacionados a ele e pressionar o botão X. O ambiente exibirá uma mensagem de confirmação da exclusão do projeto para evitar que o professor cometa uma ação indesejada, como na Figura 22.</p>
+
+<div align="center"> <img src="imagem2/ListarProjeto10.png" title="Tela Mensagem de Alerta de confirmação de exclusão do projeto." alt="Tela Mensagem de Alerta de confirmação de exclusão do projeto."/><figcaption>Figura 22. Tela Mensagem de Alerta de confirmação de exclusão do projeto.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 23. exibe a mensagem que confirma a exclusão do projeto, caso o professor aprove a ação de excluir o projeto. </p>
+
+<div align="center"> <img src="imagem2/ListarProjeto12.png" title="Tela Mensagem de Alerta de exclusão de projeto realizada com sucesso." alt="Tela Mensagem de Alerta de exclusão de projeto realizada com sucesso."/><figcaption>Figura 23. Tela Mensagem de Alerta de exclusão de projeto realizada com sucesso.</figcaption></div>
+</br>
+
+      </div>
+    </div>
+  </div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Compartilhar Autoria
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+
+<p align="justify">A funcionalidade Compartilhar Autoria do projeto permite que o professor compartilhe seus projetos com outros professores. Ao compartilhar um projeto, o professor possibilita que outros professores editem o seu projeto, tornando assim a autoria do projeto compartilhada. A seguir são apresentadas as interfaces referentes a esta funcionalidade. 
+</br></br>
+A Figura 24. apresenta a tela de compartilhamento do projeto. Para buscar o professor com que deseja-se compartilhar o projeto, basta selecionar a escola onde este professor leciona no campo Escola. 
+</p>
+
+<div align="center"> <img src="imagem2/CompartilharProjeto.png" title="Tela Compartilhar Projeto." alt="Tela Compartilhar Projeto."/><figcaption>Figura 24. Tela Compartilhar Projeto.</figcaption></div>
+</br>
+
+<p align="justify">Ao selecionar uma escola o ambiente apresenta uma lista de professores relacionados a ela, como na Figura 25. Para compartilhar o projeto basta o professor marcar os professores com quem deseja compartilhar e pressionar o botão Compartilhar Autoria. </p>
+
+<div align="center"> <img src="imagem2/CompartilharProjeto2.png" title="Tela Compartilhar Projeto com os outros professores." alt="Tela Compartilhar Projeto com os outros professores."/><figcaption>Figura 25. Tela Compartilhar Projeto com os outros professores.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 26. apresenta a mensagem de confirmação do compartilhamento do projeto. </p>
+
+<div align="center"> <img src="imagem2/CompartilhadoProjeto.png" title="Tela Mensagem de Alerta de compartilhamento realizado com sucesso." alt="Tela Mensagem de Alerta de compartilhamento realizado com sucesso."/><figcaption>Figura 26. Tela Mensagem de Alerta de compartilhamento realizado com sucesso.</figcaption></div>
+</br>
+
+<p align="justify">Para compartilhar o projeto, antes o professor precisa confirmar a ação, como na Figura 27.</p>
+
+<div align="center"> <img src="imagem2/CompartilharProjeto8.png" title="Tela Mensagem de confimação de compartilhamento do projeto." alt="Tela Mensagem de confimação de compartilhamento do projeto."/><figcaption>Figura 27. Tela Mensagem de confimação de compartilhamento do projeto.</figcaption></div>
+</br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Publicar Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      <div class="panel-body">
+
+<p align="justify">
+O ambiente de Autoria Web permite que o professor publique o projeto para professores de outras escolas possam aplica-lo. A funcionalidade responsável por isso é a Publicar Projeto. A seguir são apresentadas as telas referentes a esta funcionalidade. 
+</br></br>
+Para publicar um projeto o professor deve pressionar o item de menu Publicar. O ambiente irá publicar o projeto e exibir uma mensagem de alerta como na Figura 28.</p>
+
+<div align="center"> <img src="imagem2/ProjetoPublicado.png" title="Tela Mensagem de Alerta de projeto pulicado com sucesso." alt="Tela Mensagem de Alerta de projeto pulicado com sucesso."/><figcaption>Figura 28. Tela Mensagem de Alerta de projeto pulicado com sucesso.</figcaption></div>
+</br>
+
+<p align="justify">Contudo, para publicar um projeto é necessário avalia-lo antes. A Figura 29. exibe a tela Dados do Projeto com o campo Avaliação e a mensagem de alerta orientando o professor a avaliar o projeto antes de publica-lo, caso ainda não tenha feito. </p>
+
+<div align="center"> <img src="imagem2/PublicarProjeto3.png" title="Tela Mensagem de Alerta para inserção de avaliação do projeto." alt="Tela Mensagem de Alerta para inserção de avaliação do projeto."/><figcaption>Figura 29. Tela Mensagem de Alerta para inserção de avaliação do projeto.</figcaption></div>
+</br>
+
+<p align="justify">Caso o professor não preencha o campo Avaliação e pressione Publicar Projeto o ambiente destaca o campo Avaliação e exibe uma mensagem de alerta para o usuário, como na Figura 30.</p>
+
+<div align="center"> <img src="imagem2/PublicarProjeto2.png" title="Tela Mensagem de Alerta de campo avaliação não preenchido para publicação do projeto." alt="Tela Mensagem de Alerta de campo avaliação não preenchido para publicação do projeto."/><figcaption>Figura 30. Tela Mensagem de Alerta de campo avaliação não preenchido para publicação do projeto.</figcaption></div>
+</br>
+
+
+ </div>
+  </div>
+   </div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+         Pesquisar Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Pesquisar Projeto permite que o professor pesquise todos os projetos cadastrados no ambiente. A seguir são apresentadas as telas referentes a esta funcionalidade. 
+
+</br></br>
+Para pesquisar um projeto cadastrado no ambiente o professor precisa utilizar a barra de pesquisa, como na Figura 31. Como pode ser visto nesta figura nesta versão os resultados da pesquisa são exibidos separadamente.</p>
+
+<div align="center"> <img src="imagem2/ListarProjetopesquisado.png" title="Tela Resultados de pesquisa." alt="Tela Resultados de pesquisa."/><figcaption>Figura 31. Tela Resultados de pesquisa.</figcaption></div>
+</br>
+
+<p align="justify">Caso a pesquisa do realizada não retorne nenhum projeto, o ambiente exibe uma mensagem de alerta, como na Figura 32.</p>
+
+<div align="center"> <img src="imagem2/nada.png" title="Tela Mensagem de Alerta de nenhum resultado encontrado." alt="Tela Mensagem de Alerta de nenhum resultado encontrado."/><figcaption>Figura 32. Tela Mensagem de Alerta de nenhum resultado encontrado.</figcaption></div>
+</br>
+
+<p align="justify">Ao digitar uma informação com erro de ortografia no campo Pesquisa, o ambiente apresenta uma mensagem, como na Figura 33.</p>
+
+<div align="center"> <img src="imagem2/quisdizer.png" title="Tela Mensagem de Alerta de dados da pesquisa informados incorretamente." alt="Tela Mensagem de Alerta de dados da pesquisa informados incorretamente."/><figcaption>Figura 33.Tela Mensagem de Alerta de dados da pesquisa informados incorretamente.</figcaption></div>
+</br>
+ </div>
+  </div>
+   </div>  
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingEight">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+         Utilizar Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+      <div class="panel-body">
+
+<p align="justify">A funcionalidade Utilizar Projeto permite que o professor aplique em suas turmas os projetos publicados por outros professores. A seguir são apresentadas as interfaces referentes a esta funcionalidade. 
+</br></br>
+Ao realizar uma pesquisa o professor pode selecionar um projeto para trabalhar com suas turmas. Para utilizar um projeto publicado por outro professor, basta associar turmas a este projeto. A Figura 34. mostra a tela com os dados do projeto e uma área para o professor associar as turmas que deseja aplicar o projeto.</p>
+
+<div align="center"> <img src="imagem2/DadosProjetoPesquisa.png" title="Tela Dados do projeto para publicação." alt="Tela Dados do projeto para publicação."/><figcaption>Figura 34. Tela Dados do projeto para publicação.</figcaption></div>
+</br>
+
+<p align="justify">Ao selecionar uma escola, o ambiente apresenta uma lista contendo todas as turmas da escola que o professor autenticado no ambiente leciona, como na Figura 35.</p>
+
+<div align="center"> <img src="imagem2/DadosProjetoPesquisa3.png" title="Tela Lista de turmas que podem ser associadas ao projeto." alt="Tela Lista de turmas que podem ser associadas ao projeto."/><figcaption>Figura 35. Tela Lista de turmas que podem ser associadas ao projeto.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 36. exibe as turmas associadas ao projeto.</p>
+
+<div align="center"> <img src="imagem2/DadosProjetoPesquisa10.png" title="Tela Lista de turmas associadas ao projeto pesquisado." alt="Tela Lista de turmas associadas ao projeto pesquisado."/><figcaption>Figura 36. Tela Lista de turmas associadas ao projeto pesquisado.</figcaption></div>
+</br>
+</div>
+  </div>
+   </div>  
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingNine">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+         Listar Projetos Publicados
+        </a>
+      </h4>
+    </div>
+    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+      <div class="panel-body">
+
+<p align="justify">A funcionalidade Listar Projetos Publicados, tem a função de listar projetos recentemente publicados pelos professores cadastrados no ambiente. A seguir é apresentado a tela referente a esta funcionaliade.
+</br></br>
+A Figura 37. exibe a lista de projetos publicados pelos professores cadastrados no ambiente. Nesta lista o professor pode escolher um projeto que deseja utilizar em sua sala de aula.</p>
+
+<div align="center"> <img src="imagem2/ProjetoPublicadoP.png" title="Tela Lista de projetos publicados." alt="Tela Lista de projetos publicados."/><figcaption>Figura 37. Tela Lista de projetos publicados.</figcaption></div>
+</br>
+</div>
+  </div>
+   </div>  
+  </div>
+</font>
+</body>
+</html>

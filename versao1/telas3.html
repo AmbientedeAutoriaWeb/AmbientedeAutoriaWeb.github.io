@@ -1,0 +1,167 @@
+﻿<html>
+<head>
+<script src="./jquery-1.12.1.min.js" ></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <title>Ambiente de Autoria Web</title>
+	<meta charset=utf-8"/>
+</head>
+<body>
+<font size="3" face="Verdana">
+<ul class="list-group">
+  <li class="list-group-item list-group-item-info">Ambiente de Autoria Web</li>
+ 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+   
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html"><font size="3" face="Verdana">Home </font><span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Casos de Uso </font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../casosdeusoversaoum.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="../casosdeusoversaodois.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="../casosdeusoversaotres.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+           </ul>
+        </li>
+    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Interfaces</font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../versao1/telas1.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="../versao2/telas1.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="../versao3/telas1.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+      <li><a href="../comparacao/telas1.html"><font size="3" face="Verdana">Comparação de Versões</font></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</ul>
+  
+  
+<ul class="nav nav-pills">
+  <li role="presentation"><a href="telas1.html">Acesso ao Ambiente</a></li>
+  <li role="presentation"><a href="telas2.html">Projeto</a></li>
+  <li role="presentation" class="active"><a href="#">Atividade</a></li>
+  <li role="presentation"><a href="telas4.html">Material Motivador</a></li>
+  <li role="presentation"><a href="telas5.html">Tarefa</a></li>
+  <li role="presentation"><a href="telas6.html">Dicionário</a></li>
+  <li role="presentation"><a href="telas7.html">Ajuda</a></li>
+</ul>
+
+<div class="page-header">
+  <h1>Interfaces<small>Primeira Versão</small></h1>
+</div>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Criar Atividade
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+<p align="justify">O ambiente permite que o professor crie atividades para trabalhar com os alunos. A funcionalidade Criar Atividade é responsável por esta tarefa. 
+A seguir são apresentadas as telas referentes a esta funcionalidade. 
+</br></br>
+A Figura 1. apresenta o formulário para a criação da atividade. Este formulário conta com somente um único campo, Nome. </p>
+
+  <div align="center"> <img src="imagem1/CriarAtividades.png" title="Tela formulário de criação de atividade." alt="Tela formulário de criação de atividade."/><figcaption>Figura 1. Tela formulário de criação de atividade.</figcaption></div>
+   </br>
+
+<p align="justify">Caso o professor pressione o botão Salvar Atividade sem preencher o campo Nome que é obrigatório, o ambiente destaca o campo e exibe uma mensagem de alerta como na Figura 2.</p>
+<div align="center"> <img src="imagem1/CriarAtividades2.png" title="Tela Mensagem de Alerta de campo nome não informado." alt="Tela Mensagem de Alerta de campo nome não informado."/><figcaption>Figura 2. Tela Mensagem de Alerta de campo nome não informado.</figcaption></div>
+   </br>
+
+<p align="justify">Após o professor preencher o campo Nome e pressionar o botão Salvar Atividade, o ambiente apresenta uma mensagem de alerta para confirmar a criação da atividade, como na Figura 3.</p>
+
+<div align="center"> <img src="imagem1/MensagemSalva.png" title="Tela Mensagem de Alerta de atividade salva com sucesso." alt="Tela Mensagem de Alerta de atividade salva com sucesso."/><figcaption>Figura 3. Tela Mensagem de Alerta de atividade salva com sucesso.</figcaption></div>
+   </br>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Editar Atividade
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Editar Atividade tem a tarefa de permitir que o professor edite os dados da atividade. A seguir são exibidas as telas relacionadas a esta funcionalidade. 
+</br></br>
+A Figura 4. exibe o formulário preenchido com os dados da atividade. Neste formulário o professor pode alterar os dados da atividade e salvar. </p>
+
+<div align="center"> <img src="imagem1/CriarAtividadesEdicao.png" title="Tela Formulário da atividade preenchido." alt="Tela Formulário da atividade preenchido."/><figcaption>Figura 4. Tela Formulário da atividade preenchido.</figcaption></div>
+   </br>
+
+<p align="justify">Caso o professor deixe o campo Nome em branco e pressiona o botão Salvar Atividade, o ambiente desta o campo Nome e exibe uma mensagem de alerta ao usuário como na Figura 5.</p>
+
+<div align="center"> <img src="imagem1/CriarAtividadesNBrancoE.png" title="Tela Mensagem de alerta de campo nome não informado para salvar as edições" alt="Tela Mensagem de alerta de campo nome não informado para salvar as edições"/><figcaption>Figura 5. Tela Mensagem de alerta de campo nome não informado para salvar as edições</figcaption></div>
+   </br>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Excluir Atividade
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+<p align="justify">O ambiente contem a funcionalidade Excluir Atividade, esta atividade permite que o professor exclua as atividades relacionadas ao projeto. 
+A seguir são exibidas as interfaces referentes a esta funcionalidade. 
+</br></br>
+Para excluir uma atividade o professor deve pressionar o botão X relacionado a atividade. A Figura 6. exibe a mensagem de confirmação da ação de excluir uma atividade. Esta mensagem é exibida para que o professor não efetue uma ação indesejada. </p>
+
+<div align="center"> <img src="imagem1/MensagemExcluir.png" title="Tela Mensagem de alerta de confirmação de exclusão de atividade." alt="Tela Mensagem de alerta de confirmação de exclusão de atividade."/><figcaption>Figura 6. Tela Mensagem de alerta de confirmação de exclusão de atividade.</figcaption></div>
+   </br>
+<p align="justify">A Figura 7. exibe a mensagem confirmação da exclusão da atividade. </p>
+
+<div align="center"> <img src="imagem1/ConfirmacaoExAti.png" title="Tela Mensagem de Alerta de atividade excluída com sucesso." alt="Tela Mensagem de Alerta de atividade excluída com sucesso."/><figcaption>Figura 7. Tela Mensagem de Alerta de atividade excluída com sucesso.</figcaption></div>
+   </br>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Listar Atividade
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Listar Atividade é responsável por listar as atividades do projeto que esta aberto no ambiente. Esta funcionalidade é disponível tanto para o perfil professor quando para o perfil aluno. A seguir são apresentadas as telas relacionadas a esta funcionalidade.
+</br></br>
+A Figura 8. apresenta a lista de atividades para o perfil aluno. Nesta interface o aluno pode interagir também com o menu horizontal e utilizar a paginação para navegar pelas atividades. </p>
+<div align="center"> <img src="imagem1/ListaAtividades.png" title="Tela inicial do projeto com a lista de atividades - Aluno." alt="Tela inicial do projeto com a lista de atividades - Aluno."/><figcaption>Figura 8. Tela inicial do projeto com a lista de atividades - Aluno.</figcaption></div>
+   </br>
+
+<p align="justify">A lista de atividades apresentada pelo ambiente para o perfil professor é exibida na Figura 9. Nesta interface o professor pode editar e excluir uma atividade e interagir com o menu horizontal e vertical, além de utilizar a paginação para navegar pelas atividades. </p>
+
+<div align="center"> <img src="imagem1/ListaAtividadesP.png" title="Tela inicial do projeto com a lista de atividades - Professor." alt="Tela inicial do projeto com a lista de atividades - Professor."/><figcaption>Figura 9. Tela inicial do projeto com a lista de atividades - Professor.</figcaption></div>
+   </br>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

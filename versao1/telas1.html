@@ -1,0 +1,274 @@
+﻿<html>
+<head>
+<script src="./jquery-1.12.1.min.js" ></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <title>Ambiente de Autoria Web</title>
+	<meta charset=utf-8"/>
+</head>
+<body>
+<font size="3" face="Verdana">
+<ul class="list-group">
+  <li class="list-group-item list-group-item-info">Ambiente de Autoria Web</li>
+ 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html"><font size="3" face="Verdana">Home </font><span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Casos de Uso </font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../casosdeusoversaoum.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="../casosdeusoversaodois.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="../casosdeusoversaotres.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+           </ul>
+        </li>
+    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Interfaces</font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../versao1/telas1.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="../versao2/telas1.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="../versao3/telas1.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+      <li><a href="../comparacao/telas1.html"><font size="3" face="Verdana">Comparação de Versões</font></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</ul>
+  
+  
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Acesso ao Ambiente</a></li>
+  <li role="presentation"><a href="telas2.html">Projeto</a></li>
+  <li role="presentation"><a href="telas3.html">Atividade</a></li>
+  <li role="presentation"><a href="telas4.html">Material Motivador</a></li>
+  <li role="presentation"><a href="telas5.html">Tarefa</a></li>
+  <li role="presentation"><a href="telas6.html">Dicionário</a></li>
+  <li role="presentation"><a href="telas7.html">Ajuda</a></li>
+</ul>
+
+<div class="page-header">
+  <h1>Interfaces <small>Primeira Versão</small></h1>
+</div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Acessar ambiente
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Acessar Ambiente é responsável pelo controle de acesso ao ambiente. Nesta funcionalidade é realizada a autenticação do usuário através do 	login e da 	senha. A seguir são apresentadas as telas que compõem está funcionalidade.</p>
+
+</br>
+
+<p align="justify">
+A tela exibida na Figura 1. representa a tela inicial do ambiente 	onde o professor e o aluno informam o seus respectivos login para acessar o ambiente. Está tela consiste em duas partes: a área do professor e a área do 	aluno. A área do professor é composta pelo campo CPF e pelo botão Pesquisar que devem ser utilizados para acessar o ambiente. Já a área do aluno é composta pelos campos Nome e Data de Nascimento e pelo botão Pesquisar que também devem ser utilizados para acessar o ambiente. </p>
+</br>
+<p align="justify">Para realizar o acesso ao ambiente, tanto o professor quanto o aluno devem informar os dados requisitados na tela e pressionar o botão Pesquisar para que o ambiente verifique a autenticidade dos dados informados. </p>
+
+	
+	<div align="center"> <img src="imagem1/Login1.png" title="Tela Inicial do Ambiente" alt="Tela Acesso ao Ambiente de Autoria Web"/><figcaption>Figura 1. Tela Acesso ao Ambiente de Autoria Web</figcaption></div>
+   </br>
+
+
+<p align="justify">A Figura 2. traz a área do professor após o ambiente verificar a veracidade do CPF informado. A tela apresenta o campo Senha que deve ser informado antes de pressionar o botão Entrar, para o ambiente verificar a autenticidade da senha. Ademais, a tela traz o link Esqueci minha senha para que o professor realize um novo cadastro de senha caso a tenha esquecido. É importante reassaltar que esta tela não existe na segunda versão do ambiente.</p>
+
+<div align="center"> <img src="imagem1/Login2.png" title="Tela Acesso ao ambiente pelo perfil professor." alt="Tela Acesso ao ambiente pelo perfil professor."/><figcaption>Figura 2. Tela Acesso ao ambiente pelo perfil professor.</figcaption></div>
+</br>
+
+<p align="justify">Caso o professor pressione o botão Pesquisar sem ter informado o campo CPF o ambiente deve emitir uma mensagem de alerta e destacar o campo CPF, como na Figura 3. </p>
+
+<div align="center"> <img src="imagem1/Login5.png" title="Tela Mensagem de Alerta de CPF não informado pelo professor." alt="Tela Mensagem de Alerta de CPF não informado pelo professor."/><figcaption>Figura 3. Tela Mensagem de Alerta de CPF não informado pelo professor.</figcaption></div>
+</br>
+
+<p align="justify">Para acessar ambiente o professor deve também informar a senha antes de pressionar o botão Entrar, caso isto não aconteça o ambiente apresenta uma mensagem de alerta na interface e destaca o campo Senha de vermelho, como na Figura 4.</p>
+
+<div align="center"> <img src="imagem1/Login9.png" title="Tela Mensagem de Alerta de campo senha não informado pelo professor." alt="Tela Mensagem de Alerta de campo senha não informado pelo professor."/><figcaption>Figura 4. Tela Mensagem de Alerta de campo senha não informado pelo professor.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 5. traz a mensagem de alerta apresentada pelo ambiente quando o professor informa a senha incorreta ao tentar acessar o ambiente.</p>
+
+<div align="center"> <img src="imagem1/Login6.png" title="Tela Mensagem de Alerta de campo senha incorreto - perfil professor." alt="Tela Mensagem de Alerta de campo senha incorreto - perfil professor."/><figcaption>Figura 5. Tela Mensagem de Alerta de campo senha incorreto - perfil professor.</figcaption></div>
+</br>
+
+<p align="justify">Quando o aluno tenta acessar o ambiente, ele deve informar os campos Nome e Data de Nascimento e pressionar o botão Pesquisar. Caso o ambiente verifique que os dados são validos, ele exibe na tela o campo Senha, o link Esqueci minha senha e o botão Entrar. A Figura 6. apresenta a tela após a validação dos campos Nome e Data de Nascimento. </p>
+
+<div align="center"> <img src="imagem1/Login3.png" title="Tela Acesso ao ambiente pelo aluno." alt="Tela Acesso ao ambiente pelo aluno."/><figcaption>Figura 6. Tela Acesso ao ambiente pelo aluno.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 7. traz a mensagem de alerta e o campo Nome e Data de Nascimento em destaque, para quando o aluno pressionar o botão Pesquisar sem informar estes campos. </p>
+
+<div align="center"> <img src="imagem1/Login7.png" title="Tela Mensagem de Alerta de campo nome e data de nascimento não informados pelo aluno." alt="Tela Mensagem de Alerta de campo nome e data de nascimento não informados pelo aluno."/><figcaption>Figura 7. Tela Mensagem de Alerta de campo nome e data de nascimento não informados pelo aluno.</figcaption></div>
+</br>
+
+<p align="justify">A mensagem de alerta para quando o aluno tentar acessar o ambiente sem informar a senha é exibida na Figura 8., juntamente com o campo Senha destacado. 
+</p>
+
+<div align="center"> <img src="imagem1/Login4.png" title="Tela Mensagem de Alerta de campo senha não informado pelo aluno." alt="Tela Mensagem de Alerta de campo senha não informado pelo aluno."/><figcaption>Figura 8. Tela Mensagem de Alerta de campo senha não informado pelo aluno.</figcaption></div>
+</br>
+
+
+<p align="justify">Caso o aluno informe a senha incorretamente ao tentar acessar o ambiente é exibida uma mensagem de alerta e o campo Senha é destacado, como na Figura 9.</p>
+<div align="center"> <img src="imagem1/Login8.png" title="Tela Mensagem de Alerta de senha informada incorretamente pelo aluno." alt="Tela Mensagem de Alerta de senha informada incorretamente pelo aluno."/><figcaption>Figura 9. Tela Mensagem de Alerta de senha informada incorretamente pelo aluno.</figcaption></div>
+</br>
+
+<p align="justify">A mensagem de alerta exibida na Figura 10. é apresentada pelo ambiente quando o professor ou o aluno não tem cadastro no ambiente. Está mensagem é exibida após o professor e o aluno informarem os seus login e pressionarem o botão Pesquisar. </p>
+
+<div align="center"> <img src="imagem1/Login10.png" title="Tela Mensagem de Alerta de cadastro não encontrado no ambiente." alt="Tela Mensagem de Alerta de cadastro não encontrado no ambiente."/><figcaption>Figura 10. Tela Mensagem de Alerta de cadastro não encontrado no ambiente.</figcaption></div>
+</br>
+      </div>
+    </div>
+  </div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Primeiro Acesso
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+ 	
+<p align="justify">A primeira vez que um professor ou a aluno acessa o ambiente é necessário realizar o cadastro de uma senha, sendo está a tarefa da funcionalidade Primeiro Acesso. Com está funcionalidade o professor e o aluno podem  realizar o cadastro de uma senha para utilizar o ambiente proposto. As telas que compõem a funcionalidade Primeiro acesso estão representadas a seguir, sendo importante destacar que as telas apresentadas comportam tanto o perfil professor quanto o perfil aluno.
+
+
+</br></br>
+
+
+A Figura 11. representa o formulário que deve ser preenchido para salvar uma senha no ambiente. Está tela é composta por dois campos Senha e Confirmar Senha além do botão Salvar e Entrar. </p>
+
+<div align="center"> <img src="imagem1/PrimeiroAcesso.png" title="Tela Primeiro Acesso do usuário ao ambiente." alt="Tela Primeiro Acesso do usuário ao ambiente."/><figcaption>Figura 11. Tela Primeiro Acesso do usuário ao ambiente.</figcaption></div>
+</br>
+
+<p align="justify">Para salvar uma senha no ambiente é necessário preencher todos os campos apresentados na Figura 11. Caso o usuário não informe o campo Senha, o ambiente exibe uma mensagem de alerta em tela e destaca o campo Senha, como na Figura 12.</p>
+
+<div align="center"> <img src="imagem1/PrimeiroAcesso1.png" title="Tela Mensagem de Alerta de campo senha não informado pelo usuário." alt="Tela Mensagem de Alerta de campo senha não informado pelo usuário."/><figcaption>Figura 12. Tela Mensagem de Alerta de campo senha não informado pelo usuário.</figcaption></div>
+</br>
+
+<p align="justify">O campo Confirmar Senha também tem o seu preenchimento obrigatório ao cadastrar uma senha no ambiente. Então caso o usuário não informe o campo Confirmar Senha, o ambiente exibe na tela uma mensagem de alerta e destaca o campo, como na Figura 13.</p>
+
+<div align="center"> <img src="imagem1/PrimeiroAcesso2.png" title="Tela Mensagem de Alerta de campo confirmar senha não informado pelo usuário." alt="Tela Mensagem de Alerta de campo confirmar senha não informado pelo usuário."/><figcaption>Figura 13. Tela Mensagem de Alerta de campo confirmar senha não informado pelo usuário.</figcaption></div>
+</br>
+
+<p align="justify">Na Figura 14. traz a mensagem de alerta e os campos Senha e Confirmar Senha em destaque para quando o usuário não informar a mesma senha para os dois campos. </p>
+
+<div align="center"> <img src="imagem1/PrimeiroAcesso3.png" title="Tela Mensagem  de Alerta  de campo senha e campo confirmar senha não conferem." alt="Tela Mensagem  de Alerta  de campo senha e campo confirmar senha não conferem."/><figcaption>Figura 14. Tela Mensagem  de Alerta  de campo senha e campo confirmar senha não conferem.</figcaption></div>
+</br>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Esqueci a Senha
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+<p align="justify">A funcionalidade Esqueci a Senha tem a tarefa de cadastrar uma nova senha para o usuário, caso o mesmo tenha esquecido a sua senha de acesso ao ambiente. 
+
+Assim, a seguir são apresentadas as telas referentes a funcionalidade Esqueci a Senha. Vale destacar que as telas apresentadas para esta funcionalidade pertencem tanto para o perfil professor quanto para o perfil aluno. 
+
+</br></br>
+
+
+A Figura 15 apresenta o formulário a ser preenchido para cadastrar uma nova senha no ambiente, caso o usuário a tenha esquecido. Além disso, esta tela apresenta os dados do usuário: nome, data de nascimento e o perfil do usuário.</p>
+
+<div align="center"> <img src="imagem1/EsqueciSenha.png" title="Tela Esqueci minha senha." alt="Tela Esqueci minha senha."/><figcaption>Figura 15. Tela Esqueci minha senha.</figcaption></div>
+</br>
+
+<p align="justify">Quando o usuário preenche o formulário apresentado na Figura 15. corretamente e pressiona o botão Salvar e Entrar, o ambiente apresenta uma mensagem de alerta confirmando a alteração de senha, como na Figura 16.</p>
+
+<div align="center"> <img src="imagem1/EsqueciSenha4.png" title="Tela Mensagem de Alerta de senha alterada com sucesso pelo usuário."/><figcaption>Figura 16. Tela Mensagem de Alerta de senha alterada com sucesso pelo usuário.</figcaption></div>
+</br>
+
+<p align="justify">Caso o usuário, ao requirir a alteração de senha, não preencha o campo Nova Senha e pressione o botão Salvar e Entrar, o ambiente apresenta uma mensagem de alerta e destaca o campo Nova Senha, como na Figura 17.</p>
+
+<div align="center"> <img src="imagem1/EsqueciSenha1.png" title="Tela Mensagem de Alerta de campo nova senha não informado pelo usuário."/><figcaption>Figura 17. Tela Mensagem de Alerta de campo nova senha não informado pelo usuário.</figcaption></div>
+</br>
+
+<p align="justify">Para cadastrar uma nova senha, o usuário é obrigado a preencher o campo Confirmar Nova senha. Caso este campo não seja preenchido o ambiente apresenta uma mensagem de alerta e destaca o campo Confirmar Nova Senha, como na Figura 18.</p>
+
+<div align="center"> <img src="imagem1/EsqueciSenha2.png" title="Tela Mensagem de Alerta de campo confirmar nova senha não informado pelo usuário."/><figcaption>Figura 18. Tela Mensagem de Alerta de campo confirmar nova senha não informado pelo usuário.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 19. exibe a mensagem de alerta apresentado pelo ambiente, caso os campos Nova Senha e Confirmar Nova Senha não confiram.</p>
+
+<div align="center"> <img src="imagem1/EsqueciSenha3.png" title="Tela Mensagem de Alerta de campo senha e campo confirmar nova senha não conferem."/><figcaption>Figura 19. Tela Mensagem de Alerta de campo senha e campo confirmar nova senha não conferem.</figcaption></div>
+</br>
+      </div>
+    </div>
+  </div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Alterar Senha
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+<p align="justify">O ambiente proposto nesta dissertação permite que os usuários alterem a senha de acesso ao ambiente. Assim, a funcionalidade Alterar Senha permite modificar a senha do usuário cadastrada no ambiente. A seguir estão apresentadas as telas que compõem a funcionalidade Alterar Senha. Vale ressaltar que estas telas valem para os dois perfis de usuários que o ambiente comporta. 
+
+</br></br>
+A Figura 20. apresenta a tela com o formulário para o usuário alterar a senha de acesso ao ambiente. Este formulário é composto pelos campos: Senha, Nova Senha e Confirmar Nova Senha. Ademais, nesta tela o usuário pode interagir com o menu horizontal.</p>
+
+<div align="center"> <img src="imagem1/AlterarSenha.png" title="Tela Alterar senha de acesso ao ambiente." alt="Tela Alterar senha de acesso ao ambiente."/><figcaption>Figura 20. Tela Alterar senha de acesso ao ambiente.</figcaption></div>
+</br>
+
+<p align="justify">Caso o usuário preencha o formulário da Figura 21. corretamente, o ambiente apresenta em tela uma mensagem de confirmação de alteração de senha, como na Figura 22.</p>
+
+<div align="center"> <img src="imagem1/AlterarSenha5.png" title="Tela Mensagem Alerta de senha alterada com sucesso pelo professor." alt="Tela Mensagem Alerta de senha alterada com sucesso pelo professor."/><figcaption>Figura 21. Tela Mensagem Alerta de senha alterada com sucesso pelo professor.</figcaption></div>
+</br>
+
+<p align="justify">Para alterar a senha de acesso ao ambiente, o usuário deve informar a senha atual de acesso. Caso o usuário não informe o campo Senha e pressione o botão Alterar Senha o ambiente apresenta uma mensagem de alerta e destaca o campo, como na Figura 22. </p>
+
+<div align="center"> <img src="imagem1/AlterarSenha3.png" title="Tela Mensagem de Alerta de campo senha em branco." alt="Tela Mensagem de Alerta de campo senha em branco."/><figcaption>Figura 22. Tela Mensagem de Alerta de campo senha em branco.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 23. mostra a mensagem de alerta e o campo Senha destacado. Está situação acontece quando o usuário informa o campo Senha incorretamente e pressiona o botão Alterar Senha. </p>
+
+<div align="center"> <img src="imagem1/AlterarSenha1.png" title="Tela Mensagem de Alerta de campo senha incorreto." alt="Tela Mensagem de Alerta de campo senha incorreto."/><figcaption>Figura 23. Tela Mensagem de Alerta de campo senha incorreto.</figcaption></div>
+</br>
+
+<p align="justify">Para alterar a senha de acesso ao ambiente o usuário deve informar as mesmas informações nos campos Nova Senha e Confirmar Nova Senha. Caso estes campos não sejam os mesmos o ambiente apresenta uma mensagem de alerta e destaca os dois campos, como na Figura 24.</p>
+
+<div align="center"> <img src="imagem1/AlterarSenha4.png" title="Tela Mensagem de Alerta de campo nova senha ou campo confirmar nova senha em branco." alt="Tela Mensagem de Alerta de campo nova senha ou campo confirmar nova senha em branco."/><figcaption>Figura 24. Tela Mensagem de Alerta de campo nova senha ou campo confirmar nova senha em branco.</figcaption></div>
+</br>
+
+<p align="justify">A Figura 25. apresenta a mensagem de alerta e os campos Nova Senha e Confirmar Nova Senha em destaque para o caso de o usuário não informar estes dois campos ao alterar a senha.   </p>
+
+<div align="center"> <img src="imagem1/AlterarSenha2.png" title="Tela Mensagem de Alerta de campo nova senha e campo confirmar nova senha não conferem." alt="Tela Mensagem de Alerta de campo nova senha e campo confirmar nova senha não conferem."/><figcaption>Figura 25. Tela Mensagem de Alerta de campo nova senha e campo confirmar nova senha não conferem.</figcaption></div>
+</br>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</font>
+</body>
+</html>

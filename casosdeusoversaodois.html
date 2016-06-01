@@ -1,0 +1,2523 @@
+﻿<html>
+<head>
+<script src="./jquery-1.12.1.min.js" ></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <title>Ambiente de Autoria Web</title>
+	<meta charset=utf-8"/>
+</head>
+<body>
+<font size="3" face="Verdana">
+<ul class="list-group">
+  <li class="list-group-item list-group-item-info">Ambiente de Autoria Web</li>
+ 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><font size="3" face="Verdana">Home </font><span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Casos de Uso </font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="casosdeusoversaoum.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="casosdeusoversaodois.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="casosdeusoversaotres.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+           </ul>
+        </li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font size="3" face="Verdana">Interfaces</font><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="versao1/telas1.html"><font size="3" face="Verdana">1º Versão</font></a></li>
+            <li><a href="versao2/telas1.html"><font size="3" face="Verdana">2º Versão</font></a></li>
+            <li><a href="versao3/telas1.html"><font size="3" face="Verdana">3º Versão</font></a></li>
+	    <li><a href="comparacao/telas1.html"><font size="3" face="Verdana">Comparação de Versões</font></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</ul>
+  
+<div class="page-header">
+  <h1>Casos de uso <small>Segunda Versão</small></h1>
+</div>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+           UC01:Acesso de usuário
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <strong>Descrição</strong> Este caso de uso é iniciado pelo professor ou pelo aluno quando for necessário:
+	<ul>
+		<li>Iniciar o ambiente.</li>
+	</ul>	
+<strong>Pré-condições</strong>    Não se aplica.<br>  
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Abrir as opções de navegação para cada ator. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor e aluno.<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+  
+<ol>
+	<li>O ambiente apresenta a tela Acesso do Usuário;</li>
+	<li>O professor preenche os campos CPF e Senha e pressiona o botão “Entrar”; <strong>A1. A3. A4. A5.</strong></li>
+	<li>O ambiente verifica a vericidade dos campos informados; <strong>A2. E1. E2. E3. E4. E12.</strong></li>
+	<li>O ambiente entra no perfil do usuário que fez a autenticação;</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+ 
+<strong>Fluxos de Eventos</strong> Alternativos<br>
+    
+<strong>A1.</strong> O aluno deseja acessar o ambiente. <br>
+<ol>
+	<li>O aluno preenche os campos: Nome, Data de Nascimento e Senha e pressiona o botão “Entrar”;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 3.</li>
+</ol>	
+	
+    
+<strong>A2.</strong> O professor não lembra a senha para acessar o ambiente.<br>
+<ol>
+	<li>O professor clica no link “Esqueci minha senha”;</li>
+	<li>O ambiente apresenta a tela Esqueci a senha, com o formulário para ser preenchido pelo professor;</li>
+	<li>O professor preenche os campos Nome, CPF, Nova Senha e Confirmar Nova Senha;</li>
+	<li>O professor pressiona o botão “Alterar Senha”; <strong>E5. E8. E9. E10.</strong></li>
+	<li>O ambiente altera a senha do professor, exibe a  mensagem “Senha alterada com sucesso.” e redireciona o professor para o ambiente;</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+
+<strong>A3.</strong> O aluno não lembra a senha para acessar o ambiente.<br>
+<ol>
+	<li>O aluno clica no link “Esqueci minha senha”;</li>
+	<li>O ambiente apresenta a tela Esqueci a senha, com o formulário para ser preenchido pelo aluno;</li>
+	<li>O aluno preenche os campos Nome, Data de Nascimento, Escola, Turma, Nova Senha e Confirmar Nova Senha;</li>
+	<li>O aluno pressiona o botão “Alterar Senha”; <strong>E4. E8. E9. E10. E11.</strong></li>
+	<li>O ambiente altera a senha do aluno, exibe a  mensagem “Senha alterada com sucesso.” e redireciona o aluno para o ambiente;</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+
+<strong>A4.</strong> O professor deseja se cadastrar no ambiente.<br>
+<ol>
+	<li>O professor clica no link “Cadastrar-se no ambiente”;</li>
+	<li>O ambiente apresenta a tela Cadastro no Ambiente, com o formulário para ser preenchido pelo professor;</li>
+	<li>O professor escolhe a opção Professor no campo "Perfil";<strong>A5. A6.</strong></li>
+	<li>O ambiente apresenta o formulário a ser preenchido para realizar o cadastro no perfil professor;</li>
+	<li>O professor preenche os campos Nome, CPF, Senha e Confirmar Senha e pressiona o botão "Realizar Cadastro";<strong>E2. E5. E6. E7. E13.</strong></li>
+	<li>O ambiente realiza o cadastro do professor e redireciona o professor para a tela inicial do perfil professor. 
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+<strong>A5.</strong> O aluno deseja se cadastrar no ambiente.<br>
+<ol>
+	<li>O aluno clica no link “Cadastrar-se no ambiente”;</li>
+	<li>O ambiente apresenta a tela Cadastro no Ambiente, com o formulário para ser preenchido pelo aluno;</li>
+	<li>O aluno escolhe a opção Aluno no campo "Perfil";<strong>A4. A6.</strong></li>
+	<li>O ambiente apresenta o formulário a ser preenchido para realizar o cadastro no perfil aluno;</li>
+	<li>O aluno preenche os campos Nome, Data de Nascimento, Escola, Turma, Senha e Confirmar Senha e pressiona o botão "Realizar Cadastro";<strong>E2. E4. E6. E7. E11. E13.</strong></li>
+	<li>O ambiente realiza o cadastro do aluno e redireciona o aluno para a tela inicial do perfil aluno. 
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+<strong>A6.</strong> O usuário deseja realizar o acesso ao ambiente.<br>
+<ol>
+	<li>O usuário clica no link “Acessar o Ambiente”;</li>
+	<li>O ambiente apresenta a tela Acesso do usuário, com o formulário para ser preenchido pelo usuário;</li>
+	<li>O caso uso retorna ao Fluxo Principal 2.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Exceções <br>
+        
+<strong>E1.</strong> O campo CPF está em branco.
+<ol>
+	<li>O ambiente verifica que o campo CPF não foi preenchido, retorna a mensagem “Por favor, informe o campo CPF para acessar o ambiente.” e destaca o campo CPF que não foi preenchido em vermelho e negrito.</li>
+	<li>O Caso de Uso é reiniciado.</li>
+</ol>	
+           
+		   
+<strong>E2.</strong> O campo Senha está em branco.
+<ol>
+	<li>O ambiente verifica que o campo Senha não foi preenchido, retorna a mensagem “Por favor, informe o campo Senha para realizar esta operação.” e destaca o campo Senha que não foi preenchido em vermelho e negrito.</li>
+	<li>O Caso de Uso é reiniciado.</li>
+</ol>
+           
+<strong>E3.</strong> O campo CPF ou Senha está incorreto.
+<ol>
+	<li>O ambiente verifica que o campo CPF ou Senha não foi preenchido corretamente, retorna a mensagem "CPF ou Senha incorreto, por favor tente novamente.” e destaca o campo CPF e Senha de vermelho e negrito.</li>
+	<li>O Caso de Uso é reiniciado.</li>
+</ol>	
+           
+<strong>E4.</strong>  O campo Nome ou Data de Nascimento está em branco.
+<ol>
+	<li>O ambiente verifica que o campo Nome ou Data de Nascimento não foi preenchido, retorna a mensagem “Por favor, informe os campos Nome e Data de Nascimento para realizar esta operação.” e destaca o campo Nome ou Data de Nascimento ou  de vermelho e negrito.</li>
+	<li>O Caso de Uso é reiniciado. </li>
+</ol>	
+<strong>E5.</strong> O campo Nome ou CPF está em branco.
+<ol>
+	<li>O ambiente verifica o campo Nome ou CPF não foi preenchido, retorna a mensagem “Por favor, informe os campos Nome e CPF para realizar o cadastro no ambiente.” e destaca o campo Nome ou CPF ou  de vermelho e negrito.</li>
+	<li>O Caso de Uso é reiniciado. </li>
+</ol>	 
+               
+<strong>E6.</strong> O campo Confirmar Senha está em branco.
+<ol>
+	<li>O ambiente verifica que o campo Confirmar Senha não foi preenchido, retorna a mensagem “Por favor, informe o campo Confirmar Senha para realizar o cadastro no ambiente.” e destaca o campo Confirmar Senha que não foi preenchido em vermelho e negrito.</li>
+	<li>O Caso de Uso retorna ao Fluxo Alternativo A2, fluxo 2. </li>
+</ol>	
+               
+<strong>E7.</strong> O campo Senha e Confirmar Senha não conferem.
+<ol>
+	<li>O ambiente verifica que o campo Senha e Confirmar Senha não são os mesmos, retorna a mensagem “Os campos Senha e Confirmar Senha não conferem, por favor informe a mesma senha nos dois campos.” e destaca o campo Senha e Confirmar Senha de vermelho e negrito.</li>
+	<li>O Caso de Uso retorna ao Fluxo Alternativo A2, fluxo 2.  </li>
+</ol>	
+            
+<strong>E8.</strong> O campo Confirmar Nova Senha está em branco.
+<ol>
+	<li>O ambiente verifica que o campo Confirmar Nova Senha não foi preenchido, retorna a mensagem “Por favor, informe o campo Confirmar Nova Senha para cadastrar uma senha no ambiente.” e destaca o campo Confirmar Nova Senha que não foi preenchido em vermelho e negrito.</li>
+	<li>O Caso de Uso retorna ao Fluxo Alternativo A3, fluxo 3. </li>
+</ol>
+               
+<strong>E9.</strong>  O campo Nova Senha e Confirmar Nova Senha não conferem.
+<ol>
+	<li>O ambiente verifica que o campo Nova Senha e Confirmar Nova Senha não são os mesmos, retorna a mensagem “Os campos Nova Senha e Confirmar Nova Senha não conferem, por favor informe a mesma senha nos dois campos.” e destaca o campo Nova Senha e Confirmar Nova Senha de vermelho e negrito.</li>
+	<li>O Caso de Uso retorna ao Fluxo Alternativo A3, fluxo 3.  </li>
+</ol>	
+
+<strong>E10.</strong> O campo Nova Senha está em branco.
+<ol>
+	<li>O ambiente verifica que o campo Nova Senha não foi preenchido, retorna a mensagem “Por favor, informe o campo Nova Senha para acessar o ambiente.” e destaca o campo Nova Senha que não foi preenchido em vermelho e negrito.</li>
+	<li>O Caso de Uso é reiniciado.</li>
+</ol>	
+<strong>E11.</strong> O campo Escola ou Turma está em branco.
+<ol>
+	<li>O ambiente verifica o campo Escola ou Turma não foi preenchido, retorna a mensagem “Por favor, informe os campos Escola e Turma para realizar o  cadastro no ambiente.” e destaca o campo Escola ou Turma ou  de vermelho e negrito.</li>
+	<li>O Caso de Uso é reiniciado. </li>
+</ol>	        
+<strong>E12.</strong> O campo Nome, Data de Nascimento ou Senha está incorreta.
+<ol>
+	<li>O ambiente verifica que o campo Nome, Data de Nascimento ou Senha não foi preenchido corretamente, retorna a mensagem "Nome, Data de Nascimento ou Senha incorreto, por favor tente novamente.” e destaca o campo Nome, Data de Nascimento e Senha de vermelho e negrito.</li>
+	<li>O Caso de Uso é reiniciado.</li>
+</ol>	
+<strong>E13.</strong> O professor ou aluno não está cadastrado como membro da rede municipal de Curitiba.
+<ol>
+	<li>O ambiente verifica que o professor ou aluno não faz parte da rede muncicipal de Curitiba, retorna a mensagem “Não foi possível encontrar o cadastro, por favor entrar em contato com a direção da escola.”; </li>
+    <li>O Caso de Uso é finalizado.</li>
+</ol>	
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		UC02:Alterar senha
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+		<strong>Descrição</strong> Este caso de uso é iniciado pelo professor ou pelo aluno quando for necessário:
+	<ul>
+		<li>Trocar a senha de acesso ao ambiente.</li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Alterar a senha de acesso ao ambiente. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor e aluno.<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O ator clica no menu “Alterar Senha”; </li>
+	<li>O ambiente apresenta a tela Alterar Senha;</li>
+	<li>O ator preenche o campo Senha, Nova Senha e Confirmar Nova Senha;</li>
+	<li>O ator pressiona o botão “Alterar”;</li>
+	<li>O ambiente verifica a vericidade do campo Senha e se os campos Nova Senha e Confirmar Nova Senha conferem; <strong>E1. E2. E3. E4.</strong></li>
+	<li>O ambiente limpa o formulário e exibe a mensagem “Senha alterada com sucesso”;</li>
+	<li>O caso de uso é finalizado. 	 </li>
+</ol>	  
+	 
+
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+       <br>
+        Não se aplica. <br>
+        <br>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    
+<strong>E1.</strong> O campo Senha está em branco.
+<ol>
+	<li>O ambiente verifica que o campo Senha não foi preenchido, retorna a mensagem “Por favor, informe o campo Senha para realizar a alteração da senha.” e destaca o campo Senha que não foi preenchido em vermelho e negrito;</li>
+	<li>O Caso de Uso é reiniciado.</li>
+</ol>	
+<strong>E2.</strong> O campo Senha está incorreto.
+<ol>
+	<li>O ambiente verifica que o campo Senha não foi preenchido corretamente, retorna a mensagem “Senha incorreta, por favor tente novamente.” e destaca o campo Senha de vermelho e negrito.</li>
+    <li>O Caso de Uso é reiniciado. </li>
+</ol>
+       
+<strong>E3.</strong> O campo Nova Senha e/ou Confirmar Senha está em branco.
+<ol>
+    <li>O ambiente verifica que o campo Nova Senha e/ou Confirmar Senha está em branco, retorna a mensagem “Para alterar a senha, por favor informe os campos Nova Senha e Confirmar Nova Senha.” e destaca o campo Senha e Confirmar Senha de vermelho e negrito.</li>
+    <li>O Caso de Uso é reiniciado. </li>
+</ol>
+        
+<strong>E4.</strong> O campo Nova Senha e Confirmar Senha não conferem.
+<ol>
+     <li>O ambiente verifica que o campo Nova Senha e Confirmar Senha não são os mesmos, retorna a mensagem “Os campos Nova Senha e Confirmar Senha não conferem, por favor informe a mesma senha nos dois campos.” e destaca o campo Nova Senha e Confirmar Senha de vermelho e negrito.</li>
+     <li>O Caso de Uso é reiniciado. </li>
+</ol>
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          UC03: Sair do ambiente
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+  <strong>Descrição</strong> Este caso de uso é iniciado pelo professor ou pelo aluno quando for necessário:
+	<ul>
+		<li>Sair do ambiente.</li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Sair do perfil do usuário.</li>
+	</ul>
+<strong>Ator Primário</strong>  Professor e aluno.<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O ator clica no link “Sair”; </li>
+	<li>O ambiente apresenta a seguinte mensagem de alerta "Deseja realmente sair do ambiente?";</li>
+	<li>O ator pressiona o botão "Sim"; <strong>A1.</strong></li>
+	<li>O ambiente apresenta a tela Acesso do Usuário;</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong> O ator pressiona o botão "Não".
+<ol>
+	<li>O ator escolhe a opção "Não";</li>
+	<li> O ambiente retorna para página que o ator encontrava-se;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    <br>
+        Não se aplica. <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          UC04: Criar Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+     <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Criar um projeto de estudos. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente;</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar o projeto criado pelo professor. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O ambiente apresenta a tela Inicial do Ambiente; </li>
+	<li>O professor clica no menu “Criar Projeto”;</li>
+	<li>O ambiente abre a tela Criar Projeto;</li>
+	<li>O professor informa os campos: Nome e Descrição associados ao projeto; </li>
+	<li>O professor seleciona uma área do conhecimento no campo Área do Conhecimento;</li>
+	<li>O ambiente apresenta uma caixa de diálogo com a lista dos conteúdos que pertencem a área do conhecimento escolhida pelo professor;</li>
+<li>O professor marca os conteúdos que deseja associar ao projeto e clica no botão “Incluir Conteúdos”; <strong>E1.</strong></li>
+
+<li>O ambiente apresenta a mensagem de alerta "Deseja realmente adicionar estes conteúdos ao projeto?" com a lista de conteútos marcados;</li>
+<li>O professor pressiona o botão "Sim";<strong>A1.</strong></li>	<li>O ambiente adiciona os conteúdos marcados pelo professor na lista de conteúdos associados ao projeto;</li>
+	<li>O professor seleciona uma escola no campo Escola;</li>
+	<li>O ambiente apresenta uma caixa de diálogo com a lista das turmas que o professor leciona na escola selecionada;</li>
+	<li>O professor marca as turmas que deseja associar ao projeto e clica no botão “Incluir Turmas”;<strong>E2.</strong></li>
+
+<li>O ambiente apresenta a mensagem de alerta "Deseja realmente adicionar estas turmas ao projeto?" com a lista de turmas marcadas;</li>
+<li>O professor pressiona o botão "Sim";<strong>A2.</strong></li>	<li>O ambiente adiciona as turmas marcadas pelo professor na lista de turmas associados ao projeto;</li>
+	<li>O professor clica no botão “Salvar Projeto”;<strong>E3. E4. E5.</strong></li>
+	<li>O ambiente salva o novo projeto, redireciona o professor para a tela do projeto e mostra a mensagem “Projeto criado com sucesso”.  </li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+
+<strong>A1.</strong> O professor escolhe por não adicionar os conteúdos.
+<ol>
+	<li>O professor pressiona o botão "Não";</li>
+	<li>O ambiente retorna a caixa de diálogo com a lista de conteúdos marcados;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 7. </li>
+</ol>	
+<strong>A2.</strong> O professor escolhe por não adicionar as turmas.
+<ol>
+	<li>O professor pressiona o botão "Não";</li>
+	<li>O ambiente retorna a caixa de diálogo com a lista de turmas marcadas;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 13. </li>
+</ol>	
+
+<strong>Fluxos de Eventos</strong> Exceções<br>
+<strong>E1.</strong> O professor não marcou nenhum conteúdo para ser incluído.
+<ol>
+	<li>O ambiente verifica que o professor não marcou nenhum conteúdo, retorna a mensagem “Por favor, marque os conteúdos a serem associados ao projeto.” e destaca a coluna com as caixas de seleção da tabela Área de conhecimento e Conteúdos  de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 9.</li>
+</ol>	
+
+<strong>E2.</strong> O professor não marcou nenhuma turma para ser incluída.
+<ol>
+	<li>O ambiente verifica que o professor não marcou nenhuma turma, retorna a mensagem “Por favor, marque as turmas a serem associadas ao projeto.” e destaca a coluna com as caixas de seleção da tabela Escola e Turma  de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 13;</li>
+</ol>	
+
+<strong>E3.</strong> O campo Nome está em branco.
+<ol>
+	<li>O ambiente verifica que o campo Nome não foi preenchido, retorna a mensagem “Por favor, informe o campo Nome para cadastrar o novo projeto.” e destaca o campo Nome de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 6. </li>
+</ol>	
+
+<strong>E4.</strong> O campo Descrição está em branco. 
+<ol>
+	<li>O ambiente verifica que o campo Descrição não foi preenchido, retorna a mensagem “Por favor, informe o campo Descrição para cadastrar o novo projeto.” e destaca o campo Descrição de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 6. </li>
+</ol>	
+
+<strong>E5.</strong> A lista de conteúdos associados ao projeto está em branco.
+<ol>
+	<li>O ambiente verifica que a lista de conteúdos associados ao projeto está em branco, retorna a mensagem “Por favor, associe um conteúdo ao projeto para cadastrar o novo projeto.” e destaca a sessão Conteúdo de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 7. </li>
+</ol>	
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          UC05: Meus Projetos
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Listar os projetos de estudos associados ao professor autenticado no ambiente.  </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente;</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Exibir uma lista de projetos associados ao professor. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O ambiente apresenta a tela Inicial do Ambiente;</li>
+	<li>O professor clica no menu “Meus Projetos”;</li>
+	<li>O ambiente apresenta a tela Meus Projetos com uma lista dos projetos associados ao professor; <strong>A1. E1.</strong></li>
+	<li>O professor seleciona o projeto que deseja; </li>
+	<li>O ambiente apresenta a tela do projeto que o professor selecionou; </li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong> O professor utiliza o filtro escola.
+<ol>
+	<li>O professor seleciona uma escola no campo Escola;</li>
+	<li>O ambiente apresenta um novo campo Turma com a lista de turmas associadas ao professor e a escola selecionada; <strong>A2.</strong></li>
+	<li>O ambiente apresenta uma lista com os projetos associados ao professor e a escola selecionada; <strong>E1.</strong></li>
+	<li>O caso de uso retorna para o Fluxo Principal 6.</li>
+</ol>	
+
+<strong>A2.</strong>O professor utiliza o filtro escola e turma. 
+<ol>
+	<li>O ambiente apresenta um novo campo Turma com a lista de turmas associadas ao professor e a escola selecionada;</li>
+	<li>O professor seleciona uma turma no campo Turma;</li>
+	<li>O ambiente apresenta uma lista com os projetos associados ao professor e a turma selecionada; <strong>E1.</strong></li>
+	<li>O aso de uso retorna para o Fluxo Principal 6.</li>
+</ol>	
+
+<strong>Fluxos de Eventos</strong> Exceções<br>
+<strong>E1.</strong> Não tem nenhum projeto associado.
+<ol>
+	<li>O ambiente verifica que o professor não tem nenhum projeto associado a ele e aos filtros selecionados, retorna a seguinte mensagem “Não foi encontrado nenhum projeto.”;</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          UC06: Editar Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      <div class="panel-body">
+        <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Editar um projeto de estudos. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente;</li>
+        <li>O projeto deve estar devidamente cadastrado no ambiente;</li>
+        <li>O ambiente tiver executado o UC05: Meus Projetos.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar o projeto editado pelo professor. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O professor clica no projeto que deseja editar;</li>
+	<li>O ambiente apresenta a tela do projeto selecionado pelo professor, por padrão o menu “Unidades” já virá selecionado;</li>
+	<li>O professor clica no meu “Dados Projeto”; <strong>A1. A3.</strong></li>
+	<li>O ambiente abre a tela Dados do Projeto;</li>
+	<li>O professor edita os campos: Nome e Descrição associadas ao projeto; </li>
+	<li>O professor preenche o campo Avaliação;</li>
+	<li>O professor clica no botão “Salvar Dados Projeto”; <strong>E1. E2.</strong></li>
+	<li>O ambiente salva o projeto, redireciona o professor para a tela do projeto e mostra a mensagem “Os dados do Projeto foram salvos com sucesso.”. </li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>O professor pode deseja excluir os conteúdos associados ao projeto.
+<ol>
+	<li>O professor clica no menu “Conteúdo”;</li>
+	<li>O ambiente apresenta a tela Conteúdos com a lista de conteúdos associados ao projeto;</li>
+	<li>O professor clica no botão “Excluir” conteúdo; <strong>A2.</strong></li>
+	<li>O ambiente verifica que ao excluir este conteúdo o projeto ainda tem conteúdos associados a ele e apresenta a seguinte mensagem de confirmação "Deseja realmente excluir este conteúdo?"; <strong>E3.</strong> </li>
+<li>O professor pressiona o botão "Sim"; <strong>A7.</strong></li>
+<li>O ambiente exclui o conteúdo do projeto e apresenta a mensagem “O conteúdo foi excluído com sucesso.”</li>
+<li>O caso de uso é finalizado. </li>
+</ol>	
+
+<strong>A2.</strong>O professor pode deseja incluir conteúdos ao projeto.
+<ol>
+	<li>O professor seleciona uma área do conhecimento no campo Área de Conhecimento;</li>
+	<li>O ambiente apresenta uma caixa de diálogo com a lista dos conteúdos que pertencem a área do conhecimento escolhida pelo professor;</li>
+	<li>O professor marca os conteúdos que deseja associar ao projeto e clica no botão “Incluir Conteúdos”; <strong>E4.</strong></li>
+
+<li>O ambiente apresenta a mensagem de alerta "Deseja realmente adicionar estes conteúdos ao projeto?" com a lista de conteúdos marcados;</li>
+<li>O professor pressiona o botão "Sim";<strong>A5.</strong></li>	<li>O ambiente adiciona os conteúdos marcados pelo professor na lista de conteúdos associados ao projeto e apresenta a mensagem de alerta "Os conteúdos foram adicionados com sucesso.";</li>
+	<li>O caso de uso é finalizado.  </li>
+</ol>	
+
+      
+<strong>A3.</strong>O professor deseja excluir uma turma associada ao projeto.
+           
+<ol>
+	<li>O professor clica no menu “Turma”;</li>
+	<li>O ambiente apresenta a tela Turmas, com a listas das turmas associadas ao projeto e ao professor;</li>
+	<li>O professor clica no botão “Excluir”; <strong>A4.</strong></li>
+
+<li>O ambiente apresenta a mensagem de confirmação "Deseja realmente excluir esta turma?";</li>
+<li>O professor pressiona o botão "Sim"; <strong>A7.</strong></li>	<li>O ambiente exclui a turma do projeto e apresenta a seguinte mensagem “A turma foi excluída com sucesso.”</li>
+<li>O caso de uso é finalizado. </li>
+</ol>	
+
+<strong>A4.</strong>O professor deseja incluir turmas ao projeto.
+<ol>
+	<li>O professor seleciona uma escola no campo Escola;</li>
+	<li>O ambiente apresenta uma caixa de diálogo com a lista das turmas que estão associadas a escola e ao professor;</li>
+	<li>O professor marca as turmas que deseja associar ao projeto e clica no botão “Incluir Turmas”; <strong>E5.</strong></li>
+
+<li>O ambiente apresenta a mensagem de alerta "Deseja realmente adicionar estas turmas ao projeto?" com a lista de turmas marcadas;</li>
+<li>O professor pressiona o botão "Sim";<strong>A6.</strong></li>	<li>O ambiente adiciona as turmas marcadas pelo professor na lista de turmas associados ao projeto e apresenta uma mensagem de alerta "Turmas foram adicionadas com sucesso.";</li>
+	<li>O caso de uso é finalizado.  </li>
+</ol>	
+
+
+<strong>A5.</strong> O professor escolhe por não adicionar os conteúdos.
+<ol>
+	<li>O professor pressiona o botão "Não";</li>
+	<li>O ambiente retorna a caixa de diálogo com a lista de conteúdos marcados;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 7. </li>
+</ol>	
+<strong>A6.</strong> O professor escolhe por não adicionar as turmas.
+<ol>
+	<li>O professor pressiona o botão "Não";</li>
+	<li>O ambiente retorna a caixa de diálogo com a lista de turmas marcadas;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 13. </li>
+</ol>	
+<strong>A7.</strong> O professor escolhe por não excluir o conteúdo.
+<ol>
+	<li>O professor pressiona o botão "Não";</li>
+	<li>O ambiente retorna a tela Conteúdo;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A1, fluxo 1. </li>
+</ol>	
+<strong>A8.</strong> O professor escolhe por não excluir a turma.
+<ol>
+	<li>O professor pressiona o botão "Não";</li>
+	<li>O ambiente retorna a tela Turma;</li>
+	<li>O caso de uso retorna ao Fluxo Alterantivo A3, fluxo 2. </li>
+</ol>	<strong>Fluxos de Eventos</strong> Exceções<br>
+
+<strong>E1.</strong>O campo Nome está em branco.
+<ol>
+	<li>O ambiente verifica que o campo Nome não foi preenchido, retorna a mensagem “Por favor, informe o campo Nome para salvar as edições.” e destaca o campo Nome de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 6. </li>
+</ol>	       
+   
+<strong>E2.</strong>O campo Descrição está em branco. 
+<ol>
+	<li>O ambiente verifica que o campo Descrição não foi preenchido, retorna a mensagem “Por favor, informe o campo Descrição para salvar as edições.” e destaca o campo Descrição de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo A2. </li>
+</ol>	
+<strong>E3.</strong>O professor está tentando excluir o único conteúdo associado ao projeto. 
+<ol>
+	<li>O ambiente verifica que a lista de conteúdos associados ao projeto contem um único conteúdo e retorna a mensagem “Não foi possível excluir o Conteúdo, pois é preciso ter ao menos um conteúdo associado ao projeto.”; </li>
+	<li>O caso de uso inicia o Fluxo Alternativo A2. </li>
+</ol>	
+<strong>E4.</strong>O professor não marcou nenhum conteúdo para ser incluído.
+<ol>
+	<li>O ambiente verifica que o professor não marcou nenhum conteúdo, retorna a mensagem “Por favor, marque os conteúdos a serem associados ao projeto.” e destaca a coluna com as caixas de seleção da tabela Área de conhecimento e conteúdos  de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo A2, fluxo 3.</li>
+</ol>	
+<strong>E5.</strong>O professor não marcou nenhuma turma para ser incluída.
+<ol>
+	<li>O ambiente verifica que o professor não marcou nenhuma turma, retorna a mensagem “Por favor, marque as turmas a serem associadas ao projeto.” e destaca a coluna com as caixas de seleção da tabela Escola e Turma  de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo A4, fluxo 3.</li>
+</ol>	
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+           UC07: Compartilhar Autoria
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <div class="panel-body">
+         
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Compartilhar um projeto de estudos com outros professores. </li>
+	</ul>	
+<strong>Pré-condições</strong>Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente;</li>
+        <li>O projeto deve estar devidamente cadastrado no ambiente;</li>
+        <li>O ambiente tiver executado o UC05 – Meus Projetos.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Compartilhar a autoria do projeto com outros professores da mesma escola.  </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li> O professor clica no projeto que deseja compartilhar a autoria;</li>
+	<li>O ambiente apresenta a tela do projeto selecionado pelo professor, por padrão o menu “Unidades” já virá selecionado;</li>
+	<li>O professor clica no menu “Compartilhar Autoria”;</li>
+	<li>O ambiente apresente a tela Compartilhamento da autoria do Projeto, com a lista de escolas que o professor trabalha;</li>
+	<li>O professor seleciona a escola que deseja;</li>
+	<li>O ambiente apresenta uma caixa de diálogo com a lista com os professores que lecionam na escola selecionada pelo professor;</li>
+	<li>O professor seleciona um ou mais professores com quem deseja compartilhar o projeto e clica no botão “Compartilhar Autoria; <strong>E1.</strong></li>
+
+<li>O ambiente exibe a mensagem de alerta "Deseja realmente compartilhar a autoria do projeto com estes professores?" com a lista dos professores marcados;</li>
+<li>O professor pressiona o botão "Sim";<strong>A1.</strong></li>	<li>O ambiente compartilha o projeto com os professores selecionados, redireciona o professor para a tela do projeto e exibe a mensagem “O projeto foi compartilhado com sucesso.”</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>
+  
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+
+<strong>A1.</strong>O professor escolhe a opção "Não".
+<ol>
+	<li>O professor pressiona o botão "Não";</li>
+	<li>O ambiente retorna para caixa de diálogo com a lista de professores associados a escola que o professor escolheu;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 11.</li>
+</ol><strong>Fluxos de Eventos</strong> Exceções<br>
+    
+<strong>E1.</strong> O professor não marcou nenhum professor da lista.
+<ol>
+	<li>O professor clica no botão “Compartilhar Autoria" sem ter marcado nenhum professor;</li>
+	<li>O ambiente apresenta a mensagem “Por favor, marque os professores com que deseja compartilhar o projeto” e marca a coluna da tabela de vermelho e negrito;</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>	
+      </div>
+    </div>
+  </div><div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingEight">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+         UC08: Publicar Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+      <div class="panel-body">
+           
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Publicar um projeto de estudos.  </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente;</li>
+        <li>O projeto deve estar devidamente cadastrado no ambiente;</li>
+        <li>O ambiente tiver executado o UC05 – Meus Projetos.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Publicar o projeto de estudo.  </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O professor clica no projeto que deseja publicar;</li>
+	<li>O ambiente apresenta a tela do projeto selecionado pelo professor, por padrão o menu “Unidades” já virá selecionado;</li>
+	<li>O professor clica no menu “Publicar Projeto”;</li>
+	<li>O ambiente publica o projeto e exibe uma mensagem “O projeto foi publicado com sucesso.” <strong>E1.</strong></li>
+	<li>O caso de uso é finalizado.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<br>
+        Não se aplica. <br>
+        <br>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    
+<strong>E1.</strong>O professor deseja publicar o projeto mas não realizou a avaliação do projeto. 
+<ol>
+	<li>O ambiente exibe a mensagem “Para publicar este projeto é necessário avalia-lo primeiro, por favor informe o campo Avaliação” e redireciona o usuário para a tela de Dados do Projeto, apresentando somente o campo Avaliação como editável;</li>
+	<li>O professor preenche o campo Avaliação e clica no botão “Publicar Projeto”; <strong>E2.</strong> </li>
+	<li>O ambiente salva os dados do projeto e o publica, redireciona o professor para a tela do projeto e mostra a mensagem “O projeto foi publicado com sucesso.”.</li>
+</ol>	
+<strong>E2.</strong> O professor não informa o campo Avaliação. 
+<ol>
+	<li>O professor não preenche o campo Avaliação e clica no botão “Publicar Projeto”;</li>
+	<li>O ambiente exibe a mensagem “Por favor, informe o campo Avaliação para publicar o projeto ”.</li>
+	<li>O caso de uso retorna para o Fluxo de Exceção E1, fluxo 2.</li>
+</ol>
+
+      </div>
+    </div>
+  </div><div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingNine">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          UC09: Excluir Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+      <div class="panel-body">
+         
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Excluir um projeto de estudos. </li>
+	</ul>	
+<strong>Pré-condições</strong>Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente;</li>
+        <li>O projeto deve estar devidamente cadastrado no ambiente;</li>
+        <li>O ambiente tiver executado o UC05 – Meus Projetos.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Excluir um projeto do ambiente.  </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O professor pressiona o botão “Excluir” relacionado ao projeto;</li>
+	<li>O ambiente apresenta a mensagem “Deseja realmente excluir este projeto? Caso confirme esta ação, não será possível recuperar o projeto. ”</li>
+	<li>O professor pressiona o botão “Sim”; <strong>A1.</strong></li>
+	<li>O ambiente exclui o projeto, redireciona o professor para a tela Lista  de Projetos e mostra a mensagem “O projeto foi excluído com sucesso.”. </li>
+	<li>O caso de uso é finalizado. </li>
+</ol>
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>O professor não deseja mais excluir o projeto.
+<ol>
+	<li>O professor pressiona o botão  “Não”;</li>
+	<li>O ambiente redireciona o professor para a tela Lista  de Projetos.</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>
+<strong>Fluxos de Eventos</strong> Exceções<br>   
+<br>
+        Não se aplica. <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTen">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          UC10: Pesquisar Projeto
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+      <div class="panel-body">
+          
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Pesquisar um projeto em todo o ambiente.</li>
+		<li>Utilizar um projeto de estudo criado por outros professores.  </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor ou aluno é quem está autenticado no ambiente.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Listar os projetos pesquisados. </li>
+		<li>Associar um projeto a uma turma em que o professor leciona. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor e Aluno<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>          
+ <li>O professor preenche o campo Pesquisa e pressiona o botão “Pesquisar”; <strong>A1.</strong></li>
+	<li>O ambiente apresenta a lista de projetos associado ao conteúdo do campo Pesquisa; <strong>E4.</strong></li>
+	<li>O professor clica no projeto desejado;</li>
+	<li>O ambiente exibe na tela os Dados do Projeto com somente o campo Escola disponível para edição; <strong>E1.</strong></li>
+	<li>O professor seleciona uma escola no campo Escola;</li>
+	<li>O ambiente apresenta uma caixa de diálogo com a lista das turmas que o professor leciona na escola selecionada;</li>
+	<li>O professor marca as turmas que deseja associar ao projeto e clica no botão ”Incluir Turmas"; <strong>E2.</strong></li>
+	<li>O ambiente  adiciona  as  turmas  marcadas  pelo  professor  na  lista  de  turmas associados ao projeto;</li>
+	<li>O professor pressiona o botão “Utilizar Projeto”; <strong>E3.</strong></li>
+	<li>O ambiente vincula o projeto as turmas selecionadas pelo professor e exibe a mensagem "Projeto foi associado as turmas selecionadas com sucesso.";</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>O aluno busca um projeto no ambiente. 
+<ol>
+	<li>O aluno preenche o campo Pesquisa e pressiona o botão “Pesquisar”; <strong>E4. </strong></li>
+	<li>O ambiente apresenta a lista de projetos associado ao conteúdo do campo Pesquisa que esta associado ao aluno atenticado no ambiente; <strong>E1.</strong></li>
+	<li>O aluno clica no projeto desejado;</li>
+	<li>O ambiente apresenta a página principal do projeto escolhido pelo aluno</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    
+<strong>E1.</strong>Não foi encontrado nenhum projeto. 
+<ol>
+	<li>O ambiente verifica que não existe nenhum projeto vinculado as informações digitadas no campo Pesquisa e exibe a mensagem “Nenhum projeto encontrado, por favor reformule a sua pesquisa”;</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>	
+<strong>E2.</strong>O professor não marcou nenhuma turma para ser incluída.    
+<ol>
+	<li>O ambiente verifica que o professor não marcou nenhuma turma;</li>
+	<li>O ambiente retorna a mensagem “Por favor, marque as turmas a serem associadas ao projeto.";</li>
+	<li>O ambiente destaca a coluna com as caixas de seleção da tabela Escola e Turma de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 7.  </li>
+</ol>	
+<strong>E3.</strong>O professor não vinculou nenhuma turma ao projeto.
+<ol>
+	<li>O ambiente verifica que o professor não vinculou nenhuma turma ao projeto e exibe a mensagem “Para utilizar este projeto é necessário vincular uma turma ao projeto.”</li>
+	<li>O caso de uso é finalizado.    </li>
+</ol>
+<strong>E4.</strong>O ator digitou uma palavra errada no campo Pesquisa. 
+<ol>
+	<li>O ambiente verifica erros de ortográfica no conteúdo do campo Pesquisa e exibe a mensagem “Você quis dizer..” e completa a mensagem com sugestões de palavras. </li>
+	<li>O caso de uso é finalizado. </li>
+</ol>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingEleven">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+          UC11: Criar Unidade
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+      <div class="panel-body">
+        </h3>
+    
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Criar uma unidade.</li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar a unidade vinculada a um projeto.  </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>          
+    <li>O ambiente apresenta a tela Lista Unidades;</li>
+	<li>O professor deve clicar no botão “Criar Unidade;</li>
+	<li>O ambiente redireciona o usuário para a tela “Criar Unidade";</li>
+	<li>O professor preenche o campo Nome;</li>
+	<li>O professor clica no botão “Salvar Unidade"; <strong>E1.</strong></li>
+	<li>O ambiente salva a unidade, redireciona o professor para a tela da unidade criada e exige a mensagem “Unidade foi salva com sucesso.”</li>
+	<li>O caso de uso é finalizado.  </li>
+</ol>     
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<br>
+        Não se aplica. <br>
+        <br>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    
+<strong>E1.</strong>O campo Nome está em branco. 
+<ol>
+	<li>O ambiente verifica o campo Nome não foi preenchido; </li>
+	<li>O ambiente retorna a mensagem “Por favor, preencha o campo Nome para salvar a nova unidade.”;</li>
+	<li>O ambiente destaca o campo Nome de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4. </li>
+</ol>	
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwelve">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+          UC12: Editar Unidade
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+      <div class="panel-body">
+            
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Editar uma unidade. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar as edições feitas na unidade vinculada a um projeto.  </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>          
+	<li>O ambiente apresenta a tela Lista de Unidades;</li>
+	<li>O professor clica no botão "Editar";</li>
+	<li>O ambiente redireciona o usuário para a tela Unidade;</li>
+	<li>O professor preenche o campo Nome;</li>
+	<li>O professor clica no botão “Salvar Unidade; <strong>E1.</strong></li>
+	<li>O ambiente salva a unidade, redireciona o professor para a tela da unidade editada e exige a mensagem “Unidade foi salva com sucesso.”</li>
+	<li> O caso de uso é finalizado. </li>
+</ol>
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<br>
+        Não se aplica. <br>
+        <br>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    
+<strong>E1.</strong>O campo Nome está em branco. 
+<ol>
+	<li>O ambiente verifica o campo Nome não foi preenchido; </li>
+	<li>O ambiente retorna a mensagem “Por favor, informe o campo Nome para salvar as edições.”;</li>
+	<li>O ambiente destaca o campo Nome de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4. </li>
+</ol>	
+   
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThirteen">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+         UC13: Excluir Unidade
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+      <div class="panel-body">
+           
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Excluir uma unidade. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Excluir uma unidade vinculada a um projeto. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>          
+	<li>O ambiente apresenta a tela Lista Unidade; </li>
+	<li>O professor pressiona o botão “Excluir” vinculado a unidade;</li>
+	<li>O ambiente apresenta a mensagem “Deseja realmente excluir esta unidade?”;</li>
+	<li>O professor pressiona o botão “Sim”; <strong>A1.</strong></li>
+	<li>O ambiente exclui a unidade, redireciona o professor para a tela Lista de Unidades e mostra a mensagem “A unidade foi excluído com sucesso.”;</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>
+   
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>O professor não deseja mais excluir a unidade.
+<ol>
+	<li>O professor pressiona o botão  “Não”;</li>
+	<li>O ambiente redireciona o professor para a tela Lista de Unidades.</li>
+	<li>O caso de uso é finalizado.   </li>
+</ol>	            
+              
+<strong>Fluxos de Eventos</strong> Exceções<br>
+<br>
+        Não se aplica. <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFourteen">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+          UC14: Criar Material Motivador
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+      <div class="panel-body">
+           
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Criar um material motivador. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+		<li>Uma unidade devidamente cadastrada no ambiente deve estar aberta.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar um material motivador vinculado a uma unidade. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>          
+	<li>O ambiente apresenta a tela Unidade;</li>
+	<li>O professor deve clicar no botão “Criar Material Motivador”;</li>
+	<li>O ambiente redireciona o usuário para a tela Material Motivador;</li>
+	<li>O professor preenche os campos Nome, Palavras-chave e Material Motivador; </li>
+	<li>O professor pressiona o botão “Salvar Material Motivador”; <strong>A1. A2. A3.  A4. A5. A6. A7. A8. A9. A10. A11. A12. A13. A14. A15. A16. A17. A18. A19. A20. A21. A22. A23. A24. A25. A26. A27. A28. A29. A30. A31. A32. A33. A34. E1. E2. E3.</strong></li>
+	<li>O ambiente salva o material motivador, redireciona o professor para a tela Lista de Materiais Motivadores e exibe a mensagem “Material Motivador foi salvo com sucesso.”</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>O professor deseja adicionar a formatação de texto: Itálico, Negrito ou Sublinhado. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja formatar e pressiona o botão “Itálico”, “Negrito” ou “Sublinhado”;</li>
+	<li>O ambiente formata o texto selecionado de acordo com o botão pressionado pelo professor;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A2.</strong>O professor deseja retirar do texto a formatação Itálico, Negrito ou Sublinhado. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja retirar a formatação e pressiona o botão “Itálico”, “Negrito” ou “Sublinhado”;</li>
+	<li>O ambiente retira a formatação do texto;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>	
+
+<strong>A3.</strong>O professor deseja iniciar a escrita de um texto com a formatação: Itálico, Negrito ou Sublinhado. 
+<ol>
+	<li>O professor pressiona o botão “Itálico” “Negrito” ou “Sublinhado” e inicia a escrita do texto;</li>
+	<li>O ambiente escreve o texto com a formatação que o professor indicou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A4.</strong>O professor deseja mudar a cor da fonte do texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja modificar a cor da fonte e seleciona uma cor no campo Cor de Fonte;</li>
+	<li>O ambiente altera a cor da fonte do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A5.</strong>O professor deseja iniciar a escrita do texto com uma cor de fonte especifica.
+<ol>
+	<li>O professor seleciona a cor que deseja no campo Cor de Fonte e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com a cor que o professor selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A6.</strong>O professor deseja mudar o tamanho da fonte do texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja mudar o tamanho da fonte e seleciona o tamanho de fonte que deseja no campo Tamanho de Fonte;</li>
+	<li>O ambiente altera o tamanho da fonte do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A7.</strong>O professor deseja iniciar a escrita do texto com um tamanho de fonte especifico.
+<ol>
+	<li>O professor seleciona o tamanho de fonte que deseja no campo Tamanho de Fonte e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com o tamanho da fonte que o professor selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A8.</strong>O professor deseja mudar a fonte do texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja mudar a fonte e seleciona a fonte que deseja no campo Fonte;</li>
+	<li>O ambiente altera a fonte do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A9.</strong>O professor deseja iniciar a escrita do texto com uma fonte especifica.
+<ol>
+	<li>O professor seleciona a fonte que deseja no campo Fonte e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com a fonte que o professor selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A10.</strong>O professor deseja mudar a cor de fundo do texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja mudar a cor de fundo e seleciona a cor que deseja no campo Cor de Fundo;</li>
+	<li>O ambiente altera a cor de fundo do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A11.</strong>O professor deseja iniciar a escrita do texto com uma cor de fundo especifica.
+<ol>
+	<li>O professor seleciona a cor de fundo que deseja no campo Cor de Fundo e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com a cor de fundo que o professor selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A12.</strong>O professor deseja alinhar o texto à esquerda, à direita ou ao centro. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja alinhar e pressiona o botão “Alinhar à Esquerda” ou “Alinhar à Direita” ou “Centralizar”;</li>
+	<li>O ambiente alinha o texto selecionado de acordo com o botão pressionado pelo professor;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A13.</strong>O professor deseja escrever um texto alinhado à esquerda, à direita ou ao centro. 
+<ol>
+	<li>O professor pressiona o botão “Alinhar à Esquerda”, “Alinhar à Direita” ou “Centralizar” e inicia a escrita do texto;.</li>
+	<li>O ambiente alinha o texto escrito de acordo com o botão pressionado pelo professor;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A14.</strong> O professor deseja justificar o texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja justificar e pressiona o botão “Justificar” ;</li>
+	<li>O ambiente justifica o texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.  </li>
+</ol>
+
+<strong>A15.</strong>O professor deseja escrever um texto justificado. 
+<ol>
+	<li>O professor pressiona o botão “Justificar” e inicia a escrita do texto;.</li>
+	<li>O ambiente apresenta o texto justificado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A16.</strong>O professor deseja colar o texto que foi copiado ou recortado.
+<ol>
+	<li>O professor posiciona o cursor onde deseja colar o texto e pressiona o botão “Colar” ou pressiona as teclas “CTRL” e “V”;</li>
+	<li>O ambiente cola o texto no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A17.</strong>O professor deseja recortar o texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja recortar e pressiona o botão “Recortar” ou pressiona as teclas “CTRL” e “X” ;</li>
+	<li>O ambiente recorta  o texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A16.  </li>
+</ol>
+<strong>A18.</strong>O professor deseja copiar o texto.
+<ol>
+	<li>O professor seleciona a parte do texto que deseja copiar e pressiona o botão “Copiar” ou pressiona as teclas “CTRL” e “C” ;</li>
+	<li>O ambiente copia o texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A16. </li>
+</ol>
+<strong>A19.</strong> O professor deseja utilizar o marcador bullets ou numérico no texto. 
+<ol>
+	<li>O professor posiciona o cursor onde deseja colocar o marcador de texto e pressiona o botão “Marcador Bullets” ou ”Marador Numérico” ;</li>
+	<li>O ambiente adiciona um marcador de texto no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. <strong>A20.</strong></li>
+</ol>
+<strong>A20.</strong>O professor deseja adicionar uma sequência de marcadores.
+<ol>
+	<li>O professor posiciona o cursor no fim do texto escrito no marcador e pressiona a tecla “Enter”;</li>
+	<li>O ambiente adiciona um marcado embaixo do marcador anterior;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A21.</strong>O professor deseja adicionar uma imagem ao texto. 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir a imagem, pressiona o botão “Inserir Imagem”, seleciona a imagem dentro das pastas contidas no computador e pressiona o botão “Abrir”;</li>
+	<li>O ambiente adiciona a imagem no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. <strong>A22. A23.</strong></li>
+</ol>
+<strong>A22.</strong>O professor deseja alterar uma imagem de posição no texto. 
+<ol>
+	<li>O professor clica em cima da imagem deseja, pressiona o botão esquerdo do mouse e arrasta a imagem para o local desejado;</li>
+	<li>O ambiente altera a posição da imagem para o local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A23.</strong>O professor deseja alterar o tamanho da imagem. 
+<ol>
+	<li>O professor clica em cima de um dos oito pontos encontrados na borda da imagem, pressiona o botão esquerdo do mouse e arrasta o cursor até chegar ao tamanho desejado para a imagem;</li>
+	<li>O ambiente altera o tamanho da imagem;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A24.</strong>O professor deseja adicionar um arquivo ao texto no formato PDF (Portable Document Format), DOC (Document} ou ODT (OpenDocument). 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir o arquivo, pressiona o botão “Inserir Arquivo”, seleciona um arquivo dentro das pastas contidas no computador e pressiona o botão “Abrir”;</li>
+	<li>O ambiente adiciona o arquivo no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A25.</strong>O professor deseja adicionar um elemento hipermídia (link) ao texto. 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir o elemento hipermídia, pressiona o botão ”Inserir Link”;</li>
+	<li>O ambiente abre uma pequena janela onde o professor deve informar os dados sobre o link;</li>
+	<li>O professor preenche os campos URL e Título do Link e pressiona o botão “Inserir Link”;</li>
+	<li>O ambiente insere o link no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A26.</strong>O professor deseja adicionar uma tabela ao texto. 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir a tabela e pressiona o botão ”Inserir Tabela”;</li>
+	<li>O ambiente abre uma pequena janela onde o professor deve informar os dados sobre a tabela;</li>
+	<li>O professor preenche os campos Coluna e Linhas e pressionar o botão “Inserir Tabela”; <strong>E4. E5.</strong></li>
+	<li>O ambiente insere uma tabela no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A27.</strong>O professor deseja adicionar uma linha ou coluna na tabela. 
+<ol>
+	<li>O professor clica com o botão direito do mouse dentro da tabela.</li>
+	<li>O ambiente abre um menu com as opções “Adicionar Linha”, “Adicionar Coluna”, “Excluir Linha” e “Excluir Coluna”;</li>
+	<li>O professor escolhe a opção “Adicionar Linha” ou “Adicionar Coluna”</li>
+	<li>O ambiente abre uma janela para o professor preencher os dados da inserção;</li>
+	<li>O professor preenche os campos Quantidade e Posição (Antes ou Depois);</li>
+	<li>O ambiente adiciona uma linha ou coluna de acordo com os dados fornecidos pelo professor</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A28.</strong> O professor deseja excluir uma linha ou coluna da tabela.          
+<ol>
+	<li>O professor clica com o botão direito do mouse dentro da tabela na coluna ou linha que deseja excluir;</li>
+	<li>O ambiente abre um menu com as opções “Adicionar Linha”, “Adicionar Coluna”, “Excluir Linha” e “Excluir Coluna”;</li>
+	<li>O professor escolhe a opção “Excluir Linha” ou “Excluir Coluna”</li>
+	<li>O ambiente exclui a linha ou coluna que o cursor está posicionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.   </li>
+</ol>
+
+<strong>A29.</strong> O professor deseja iniciar a escrita do texto com marcador bullets ou numérico.  
+<ol>
+	<li> O professor pressiona o botão “Marcador Bullets” ou ”Marador Numérico”;</li>
+	<li>O ambiente adiciona um marcado no texto;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A30.</strong>O professor deseja adicionar um quadro ao texto. 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir o quadro, pressiona o botão “Inserir Quadro”;</li>
+	<li>O ambiente adiciona o quadro no local indicado;</li>
+	<li>O professor adiciona texto dentro do quadro;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. <strong>A31. A32.</strong></li>
+</ol>
+<strong>A31.</strong>O professor deseja alterar um quadro de posição no texto. 
+<ol>
+	<li>O professor clica em cima do quadro, pressiona o botão esquerdo do mouse e arrasta o quadro para o local desejado;</li>
+	<li>O ambiente altera a posição do quadro para o local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>	
+<strong>A32.</strong>O professor deseja alterar o tamanho do quadro. 
+<ol>
+	<li>O professor clica em cima de um dos oito pontos encontrados na borda do quadro, pressiona o botão esquerdo do mouse e arrasta o cursor até chegar ao tamanho desejado para o quadro;</li>
+	<li>O ambiente modifica o tamanho do quadro;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>	
+<strong>A33.</strong>O professor deseja um novo documento. 
+<ol>
+	<li>O professor pressiona o botão “Novo Documento”;</li>
+	<li>O ambiente limpa o campo Material Motivador;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 4. </li>
+</ol>	
+<strong>A34.</strong>O professor deseja imprimir o material motivador. 
+<ol>
+	<li>O professor pressiona o botão “Imprimir Material Motivador”;</li>
+	<li>O ambiente monta um documento com o campo Título e Material Motivador para que o professor possa imprimir;</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>	
+
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    
+<strong>E1.</strong>O campo Material Motivador está vazio.
+<ol>
+	<li>O ambiente verifica que o campo Material Motivador está vazio e retorna a mensagem Por favor, informe o campo Material Motivador para salvar o material motivador.”;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4. </li>
+</ol>	 
+<strong>E2.</strong>O campo Nome está vazio.  
+<ol>
+	<li>O ambiente verifica que o campo Nome está vazio e retorna a mensagem “Por favor, informe o campo Nome para salvar o material motivador.”;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4. </li>
+</ol>	 
+<strong>E3.</strong>O campo Palavras-chave está vazio.
+<ol>
+	<li>O ambiente verifica que o campo Palavras-chave está vazio e retorna a mensagem “Por favor, informe o campo Palavras-chave para salvar o material motivador.”;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4.</li>
+</ol>	  
+<strong>E4.</strong> O campo Linha está vazio.
+<ol>
+	<li> O ambiente verifica que o campo Linha está vazio e retorna a mensagem “Por favor, informe o campo Linha.”;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 26, fluxo 3.  </li>
+</ol>	
+<strong>E5.</strong>O campo Coluna está vazio.
+<ol>
+	<li>O ambiente verifica que o campo Coluna está vazio e retorna a mensagem “Por favor, informe o campo Coluna.”;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 26, fluxo 3.    </li>
+</ol>	    
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFifteen">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+          UC15: Editar Material Motivador
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
+      <div class="panel-body">
+       <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Editar um material motivador.  </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+		<li>Uma unidade devidamente cadastrada no ambiente deve estar aberta.</li>
+		<li>O material motivador devidamente cadastrado no ambiente deve estar aberto.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar as edições feitas no material motivador.  </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O ambiente apresenta a tela Unidade com a lista dos materiais motivadores vinculados a unidade;</li>
+	<li>O professor clica no material motivador que deseja editar;</li>
+	<li>O ambiente redireciona o usuário para a tela Material Motivador;</li>
+
+<li>O professor pressiona o botão "Editar Material Motivador"</li>
+<li>O ambiente redireciona o professor para a tela Editar Material Motivador;</li>	<li>O professor edita os campos Nome, Palavras-chave e Material Motivador; </li>
+	<li>O professor pressiona o botão “Salvar Material Motivador”; <strong>A1. A2. A3. A4. A5. A6. A7. A8. A9. A10. A11. A12. A13. A14. A15. A16. A17. A18. A19. A20. A21. A22. A23. A24.A25.A26.A27. A28. A29. A30. A31. A32. A33. A34 E1. E2. E3.</strong></li>
+	<li>O ambiente salva as alterações feitas no material motivador, redireciona o professor para a tela Unidade e exibe a mensagem “Material Motivador foi salvo com sucesso.”</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>O professor deseja adicionar a formatação de texto: Itálico, Negrito ou Sublinhado. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja formatar e pressiona o botão “Itálico”, “Negrito” ou “Sublinhado”;</li>
+	<li>O ambiente formata o texto selecionado de acordo com o botão pressionado pelo professor;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A2.</strong>O professor deseja retirar do texto a formatação Itálico, Negrito ou Sublinhado. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja retirar a formatação e pressiona o botão “Itálico”, “Negrito” ou “Sublinhado”;</li>
+	<li>O ambiente retira a formatação do texto;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>	
+
+<strong>A3.</strong>O professor deseja iniciar a escrita de um texto com a formatação: Itálico, Negrito ou Sublinhado. 
+<ol>
+	<li>O professor pressiona o botão “Itálico” “Negrito” ou “Sublinhado” e inicia a escrita do texto;</li>
+	<li>O ambiente escreve o texto com a formatação que o professor indicou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A4.</strong>O professor deseja mudar a cor da fonte do texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja modificar a cor da fonte e seleciona uma cor no campo Cor de Fonte;</li>
+	<li>O ambiente altera a cor da fonte do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A5.</strong>O professor deseja iniciar a escrita do texto com uma cor de fonte especifica.
+<ol>
+	<li>O professor seleciona a cor que deseja no campo Cor de Fonte e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com a cor que o professor selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A6.</strong>O professor deseja mudar o tamanho da fonte do texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja mudar o tamanho da fonte e seleciona o tamanho de fonte que deseja no campo Tamanho de Fonte;</li>
+	<li>O ambiente altera o tamanho da fonte do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A7.</strong>O professor deseja iniciar a escrita do texto com um tamanho de fonte especifico.
+<ol>
+	<li>O professor seleciona o tamanho de fonte que deseja no campo Tamanho de Fonte e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com o tamanho da fonte que o professor selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A8.</strong>O professor deseja mudar a fonte do texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja mudar a fonte e seleciona a fonte que deseja no campo Fonte;</li>
+	<li>O ambiente altera a fonte do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A9.</strong>O professor deseja iniciar a escrita do texto com uma fonte especifica.
+<ol>
+	<li>O professor seleciona a fonte que deseja no campo Fonte e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com a fonte que o professor selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A10.</strong>O professor deseja mudar a cor de fundo do texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja mudar a cor de fundo e seleciona a cor que deseja no campo Cor de Fundo;</li>
+	<li>O ambiente altera a cor de fundo do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A11.</strong>O professor deseja iniciar a escrita do texto com uma cor de fundo especifica.
+<ol>
+	<li>O professor seleciona a cor de fundo que deseja no campo Cor de Fundo e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com a cor de fundo que o professor selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A12.</strong>O professor deseja alinhar o texto à esquerda, à direita ou ao centro. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja alinhar e pressiona o botão “Alinhar à Esquerda” ou “Alinhar à Direita” ou “Centralizar”;</li>
+	<li>O ambiente alinha o texto selecionado de acordo com o botão pressionado pelo professor;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A13.</strong>O professor deseja escrever um texto alinhado à esquerda, à direita ou ao centro. 
+<ol>
+	<li>O professor pressiona o botão “Alinhar à Esquerda”, “Alinhar à Direita” ou “Centralizar” e inicia a escrita do texto;.</li>
+	<li>O ambiente alinha o texto escrito de acordo com o botão pressionado pelo professor;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A14.</strong> O professor deseja justificar o texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja justificar e pressiona o botão “Justificar” ;</li>
+	<li>O ambiente justifica o texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.  </li>
+</ol>
+
+<strong>A15.</strong>O professor deseja escrever um texto justificado. 
+<ol>
+	<li>O professor pressiona o botão “Justificar” e inicia a escrita do texto;.</li>
+	<li>O ambiente apresenta o texto justificado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A16.</strong>O professor deseja colar o texto que foi copiado ou recortado.
+<ol>
+	<li>O professor posiciona o cursor onde deseja colar o texto e pressiona o botão “Colar” ou pressiona as teclas “CTRL” e “V”;</li>
+	<li>O ambiente cola o texto no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A17.</strong>O professor deseja recortar o texto. 
+<ol>
+	<li>O professor seleciona a parte do texto que deseja recortar e pressiona o botão “Recortar” ou pressiona as teclas “CTRL” e “X” ;</li>
+	<li>O ambiente recorta  o texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A16.  </li>
+</ol>
+<strong>A18.</strong>O professor deseja copiar o texto.
+<ol>
+	<li>O professor seleciona a parte do texto que deseja copiar e pressiona o botão “Copiar” ou pressiona as teclas “CTRL” e “C” ;</li>
+	<li>O ambiente copia o texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A16. </li>
+</ol>
+<strong>A19.</strong> O professor deseja utilizar o marcador bullets ou numérico no texto 
+
+<ol>
+	<li>O professor posiciona o cursor onde deseja colocar o marcador de texto e pressiona o botão “Marcador Bullets” ou ”Marador Numérico” ;</li>
+	<li>O ambiente adiciona um marcador de texto no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. <strong>A20.</strong></li>
+</ol>
+<strong>A20.</strong>O professor deseja adicionar uma sequência de marcadores.
+<ol>
+	<li>O professor posiciona o cursor no fim do texto escrito no marcador e pressiona a tecla “Enter”;</li>
+	<li>O ambiente adiciona um marcado embaixo do marcador anterior;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A21.</strong>O professor deseja adicionar uma imagem ao texto. 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir a imagem, pressiona o botão “Inserir Imagem”, seleciona a imagem dentro das pastas contidas no computador e pressiona o botão “Abrir”;</li>
+	<li>O ambiente adiciona a imagem no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. <strong>A22. A23.</strong></li>
+</ol>
+<strong>A22.</strong>O professor deseja alterar uma imagem de posição no texto. 
+<ol>
+	<li>O professor clica em cima da imagem deseja, pressiona o botão esquerdo do mouse e arrasta a imagem para o local desejado;</li>
+	<li>O ambiente altera a posição da imagem para o local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A23.</strong>O professor deseja alterar o tamanho da imagem. 
+<ol>
+	<li>O professor clica em cima de um dos oito pontos encontrados na borda da imagem, pressiona o botão esquerdo do mouse e arrasta o cursor até chegar ao tamanho desejado para a imagem;</li>
+	<li>O ambiente altera o tamanho da imagem;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A24.</strong>O professor deseja adicionar um arquivo ao texto no formato PDF (Portable Document Format), DOC (Document} ou ODT (OpenDocument). 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir o arquivo, pressiona o botão “Inserir Arquivo”, seleciona um arquivo dentro das pastas contidas no computador e pressiona o botão “Abrir”;</li>
+	<li>O ambiente adiciona o arquivo no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A25.</strong>O professor deseja adicionar um elemento hipermídia (link) ao texto. 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir o elemento hipermídia, pressiona o botão ”Inserir Link”;</li>
+	<li>O ambiente abre uma pequena janela onde o professor deve informar os dados sobre o link;</li>
+	<li>O professor preenche os campos URL e Título do Link e pressiona o botão “Inserir Link”;</li>
+	<li>O ambiente insere o link no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A26.</strong>O professor deseja adicionar uma tabela ao texto. 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir a tabela e pressiona o botão ”Inserir Tabela”;</li>
+	<li>O ambiente abre uma pequena janela onde o professor deve informar os dados sobre a tabela;</li>
+	<li>O professor preenche os campos Coluna e Linhas e pressionar o botão “Inserir Tabela”; <strong>E4. E5.</strong></li>
+	<li>O ambiente insere uma tabela no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A27.</strong>O professor deseja adicionar uma linha ou coluna na tabela. 
+<ol>
+	<li>O professor clica com o botão direito do mouse dentro da tabela.</li>
+	<li>O ambiente abre um menu com as opções “Adicionar Linha”, “Adicionar Coluna”, “Excluir Linha” e “Excluir Coluna”;</li>
+	<li>O professor escolhe a opção “Adicionar Linha” ou “Adicionar Coluna”</li>
+	<li>O ambiente abre uma janela para o professor preencher os dados da inserção;</li>
+	<li>O professor preenche os campos Quantidade e Posição (Antes ou Depois);</li>
+	<li>O ambiente adiciona uma linha ou coluna de acordo com os dados fornecidos pelo professor</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>A28.</strong> O professor deseja excluir uma linha ou coluna da tabela.          
+<ol>
+	<li>O professor clica com o botão direito do mouse dentro da tabela na coluna ou linha que deseja excluir;</li>
+	<li>O ambiente abre um menu com as opções “Adicionar Linha”, “Adicionar Coluna”, “Excluir Linha” e “Excluir Coluna”;</li>
+	<li>O professor escolhe a opção “Excluir Linha” ou “Excluir Coluna”</li>
+	<li>O ambiente exclui a linha ou coluna que o cursor está posicionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.   </li>
+</ol>
+
+<strong>A29.</strong> O professor deseja iniciar a escrita do texto com marcador bullets ou numérico.  
+<ol>
+	<li> O professor pressiona o botão “Marcador Bullets” ou ”Marador Numérico”;</li>
+	<li>O ambiente adiciona um marcado no texto;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>
+<strong>A30.</strong>O professor deseja adicionar um quadro ao texto. 
+<ol>
+	<li>O professor posiciona o cursor onde deseja inserir o quadro, pressiona o botão “Inserir Quadro”;</li>
+	<li>O ambiente adiciona o quadro no local indicado;</li>
+	<li>O professor adiciona texto dentro do quadro;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. <strong>A31. A32.</strong></li>
+</ol>
+<strong>A31.</strong>O professor deseja alterar um quadro de posição no texto. 
+<ol>
+	<li>O professor clica em cima do quadro, pressiona o botão esquerdo do mouse e arrasta o quadro para o local desejado;</li>
+	<li>O ambiente altera a posição do quadro para o local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>	
+<strong>A32.</strong>O professor deseja alterar o tamanho do quadro. 
+<ol>
+	<li>O professor clica em cima de um dos oito pontos encontrados na borda do quadro, pressiona o botão esquerdo do mouse e arrasta o cursor até chegar ao tamanho desejado para o quadro;</li>
+	<li>O ambiente modifica o tamanho do quadro;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5.</li>
+</ol>	
+<strong>A33.</strong>O professor deseja um novo documento. 
+<ol>
+	<li>O professor pressiona o botão “Novo Documento”;</li>
+	<li>O ambiente limpa o campo Material Motivador;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 4. </li>
+</ol>	
+<strong>A34.</strong>O professor deseja imprimir o material motivador. 
+<ol>
+	<li>O professor pressiona o botão “Imprimir Material Motivador”;</li>
+	<li>O ambiente monta um documento com o campo Título e Material Motivador para que o professor possa imprimir;</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    
+<strong>E1.</strong>O campo Material Motivador está vazio.
+<ol>
+	<li>O ambiente verifica que o campo Material Motivador está vazio e retorna a mensagem Por favor, informe o campo Material Motivador para salvar o material motivador.”;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4. </li>
+</ol>	 
+<strong>E2.</strong>O campo Nome está vazio.  
+<ol>
+	<li>O ambiente verifica que o campo Nome está vazio e retorna a mensagem “Por favor, informe o campo Nome para salvar o material motivador.”;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4. </li>
+</ol>	 
+<strong>E3.</strong>O campo Palavras-chave está vazio.
+<ol>
+	<li>O ambiente verifica que o campo Palavras-chave está vazio e retorna a mensagem “Por favor, informe o campo Palavras-chave para salvar o material motivador.”;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4.</li>
+</ol>	  
+<strong>E4.</strong> O campo Linha está vazio.
+<ol>
+	<li> O ambiente verifica que o campo Linha está vazio e retorna a mensagem “Por favor, informe o campo Linha.”;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 26, fluxo 3.  </li>
+</ol>	
+<strong>E5.</strong>O campo Coluna está vazio.
+<ol>
+	<li>O ambiente verifica que o campo Coluna está vazio e retorna a mensagem “Por favor, informe o campo Coluna.”;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 26, fluxo 3.    </li>
+</ol>	
+	          
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSixten">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSixten" aria-expanded="false" aria-controls="collapseSixten">
+          UC16: Excluir Material Motivador
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSixten" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixten">
+      <div class="panel-body">
+  <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Excluir um material motivador.  </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+		<li>Uma unidade devidamente cadastrada no ambiente deve estar aberta.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Excluir um material motivador vinculado a uma unidade. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>      
+	<li>O ambiente apresenta a tela Unidade com a lista dos materiais motivadores vinculados com a unidade;</li>
+	<li>O professor pressiona o botão “Excluir Material Motivador” vinculado ao material motivador;</li>
+	<li>O ambiente apresenta a mensagem “Deseja realmente excluir este material motivador?”</li>
+	<li>O professor pressiona o botão “Sim”; <strong>A1.</strong></li>
+	<li>O ambiente exclui o material motivador, redireciona o professor para a tela Unidade e mostra a mensagem “O material motivador foi excluído com sucesso.”. </li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong> O professor não deseja mais excluir o material motivador.
+<ol>
+   <li>O professor pressiona o botão “Não”;</li>
+   <li>O ambiente redireciona o professor para a tela Unidade.</li>
+   <li>O caso de uso é finalizado. </li>
+</ol>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    <br>
+        Não se aplica. <br>
+        <br> 
+ </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSeventeen">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+          UC17: Criar Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
+      <div class="panel-body">
+  <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Criar uma tarefa.  </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+		<li>Uma unidade devidamente cadastrada no ambiente deve estar aberta.</li>
+		<li>O material motivador devidamente cadastrado no ambiente deve estar aberto.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar a tarefa vinculada a um material motivador. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol> 
+	<li>O ambiente apresenta a tela Material Motivador;</li>    
+	<li>O professor deve clicar no botão “Criar Tarefa”;</li>    
+	<li>O ambiente  exibe na tela o campo Tipo de Questão com as opções “Dissertativa”, “Certo ou Errado”, “Resposta Curta”, “Múltipla Escolha”, “Completação”, “Associação” e “Destaque de Palavras”;</li>    
+	<li>O professor escolhe a opção “Dissertativa”;</li>    
+	<li>O ambiente exibe na tela o campo Enunciado a ser preenchido da questão dissertativa. </li>    
+	<li>O professor preenche o campo Enunciado e pressiona o botão “Salvar Tarefa”; <strong>E1. A1. A2. A3. A5. A8. A10. A11</strong></li> 
+	<li>O ambiente salva a tarefa criada, redireciona o professor para a tela do material motivador e exibe a mensagem “Tarefa criada com sucesso.”;</li>    
+	<li>O caso de uso é finalizado. </li>    
+</ol>
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>O professor deseja criar uma questão certo ou errado.
+<ol>
+	<li>O professor escolhe a opção “Certo ou Errado”;</li>
+	<li>O ambiente exibe na tela o campo Enunciado a ser preenchido da questão certo ou errado e as duas opções de resposta “Certo” e  “Errado”.</li>
+	<li>O professor preenche o campo Enunciado, Frase e pressiona o botão “Salvar Tarefa”; <strong>E1. E5. A11. A12.</strong></li>
+	<li>O caso retorna para o Fluxo Principal 7. </li>
+</ol>
+<strong>A2.</strong>O professor deseja criar uma questão de resposta curta. 
+<ol>
+	<li>O professor escolhe a opção “Resposta Curta”;</li>
+	<li>O ambiente exibe na tela o campo Enunciado a ser preenchido da questão resposta curta.</li>
+	<li>O professor preenche o campo Enunciado e pressiona o botão “Salvar Tarefa”; <strong>E1. A11.</strong></li>
+	<li>O caso retorna para o Fluxo Principal 7. </li>
+</ol>
+<strong>A3.</strong>O professor deseja criar uma questão de múltipla escolha. 
+<ol>
+	<li>O professor escolhe a opção “Múltipla Escolha”;</li>
+	<li>O ambiente exibe na tela o campo Enunciado e o campo Opção. </li>
+	<li>O professor preenche o campo Enunciado e Opção e pressiona o botão “Salvar Tarefa”; <strong>A4. E1. E2. A11.</strong></li>
+	<li>O  caso retorna para o Fluxo Principal 7. </li>
+</ol>
+<strong>A4.</strong>O professor deseja criar mais uma opção na questão múltipla escolha.
+<ol>
+	<li>O professor pressiona o botão  “Nova Opção”;</li>
+	<li>O ambiente exibe na tela mais um campo Opção. </li>
+	<li>O professor preenche o novo campo Opção;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A3, fluxo 3.</li>
+</ol>
+<strong>A5.</strong>O professor deseja criar uma questão de complete. 
+<ol>
+	<li>O professor escolhe a opção “Completação”;</li>
+	<li>O ambiente exibe na tela o campo Enunciado e o campo Texto;</li>
+	<li>O professor preenche o campo Enunciado e Texto e pressiona o botão “Retirar Pontuação”; <strong>A6. A7. A11. E11.</strong></li>
+	<li>O ambiente retira a pontuação do texto;</li>
+	<li>O professor  pressiona o botão “Salvar Tarefa”; <strong>E1. E3. A11.</strong></li>
+	<li>O caso retorna para o Fluxo Principal 7.</li>
+</ol>
+<strong>A6.</strong>O professor deseja retirar os acentos gráficos do texto. 
+<ol>
+	<li>O professor pressiona o botão “Retirar Acentuação”;<strong>E12.</strong></li>
+	<li>O ambiente retira a acentuação da palavras do texto e sublinha as palavras que foram modificadas;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A5, fluxo 5.</li>
+</ol>
+<strong>A7.</strong>O professor deseja retirar palavras do texto. 
+<ol>
+	<li>O professor pressiona o botão “Retirar Palavras” e deleta as palavras do texto que deseja retirar;<strong>E13.</strong></li>
+	<li>O ambiente retira as palavras do texto e sublinha o local onde as palavras estavam;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A5, fluxo 5.</li>
+</ol>
+<strong>A8.</strong>O professor deseja criar uma questão de associação. 
+<ol>
+	<li>O professor escolhe a opção “Associação”;</li>
+	<li>O ambiente exibe na tela o campo Enunciado e o campo Opção 1 e Opção A;</li>
+	<li>O professor preenche o campo Enunciado, Opção 1 e Opção A e pressiona o botão “Salvar Tarefa”; <strong>A9. E1. E4. A11.</strong></li>
+	<li>O caso retorna para o Fluxo Principal 7.  </li>
+</ol>
+<strong>A9.</strong>O professor deseja criar mais uma opção na questão associação.  
+<ol>
+	<li>O professor pressiona o botão  “Novas Opções”;</li>
+	<li>O ambiente exibe na tela mais dois campos opções, um na primeira coluna e outra na segunda; </li>
+	<li>O professor preenche os novos campos;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A8, fluxo 3.</li>
+</ol>
+<strong>A10.</strong>O professor deseja criar uma questão de destacar palavras. 
+<ol>
+	<li>O professor escolhe a opção “Destaque de Palavras”;</li>
+	<li>O ambiente exibe na tela o campo Enunciado e o campo Texto;</li>
+	<li>O professor preenche o campo Enunciado e Texto e pressiona o botão “Salvar Tarefa”; <strong>E1. E3. A11.</strong></li>
+	<li>O caso retorna para o Fluxo Principal 7.</li>
+</ol>
+<strong>A11.</strong>O professor deseja imprimir a tarefa criada.
+<ol>
+	<li>O professor pressiona o botão “Imprimir Tarefa”<strong>E6. E7. E8. E9. E10.</strong>;</li>
+	<li>O ambiente monta um documento com os campos da questão para que o professor possa imprimir a tarefa;</li>
+	<li>O caso retorna para o Fluxo Principal 7. </li>
+</ol>
+<strong>A12.</strong>O professor deseja adicionar mais uma frase para a questão. 
+<ol>
+	<li>O professor pressiona o botão “+ Frases”;</li>
+	<li>O ambiente exibe mais um campo Frase para o professor preencher;</li>
+	<li>O professor preenche o campo Frase;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A1, fluxo 3.</li>
+</ol>
+<strong>Fluxos de Eventos</strong> Exceções</br>
+<strong>E1.</strong>O campo Enunciado está em branco.
+<ol>
+	<li>O ambiente verifica que o campo Enunciado não foi preenchido e retorna a mensagem “Por favor, informe o campo Enunciado para salvar a nova tarefa.”;</li>
+	<li>O ambiente destaca o campo Enunciado de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 6; Fluxo Alternativo A1, fluxo 3; Fluxo Alternativo A2, fluxo 3; Fluxo Alternativo A3, fluxo 3; Fluxo Alternativo A5, fluxo 5; Fluxo Alternativo A8, fluxo 3 ou Fluxo Alternativo A10, fluxo 3.</li>
+</ol>
+<strong>E2.</strong>A questão múltipla escolha deve ter ao menos duas opções.
+<ol>
+	<li>O ambiente verifica que a questão múltipla escolha tem menos de duas opções e retorna a mensagem “Por favor, informe ao menos duas opções de resposta.”;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo A3, fluxo 3;</li>
+</ol>
+<strong>E3.</strong>O campo Texto está em branco. 
+<ol>
+	<li>O ambiente verifica que o campo Texto não foi preenchido e retorna a mensagem “Por favor, informe o campo Texto para salvar a nova tarefa.”;</li>
+	<li>O ambiente destaca o campo Texto de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo A5, fluxo 3 ou o Fluxo Alternativo A10, fluxo 3;</li>
+</ol>
+<strong>E4.</strong>A questão associativa deve ter ao menos duas opções em cada coluna. 
+<ol>
+	<li>O ambiente verifica que a questão associativa tem menos de duas opções em cada coluna e retorna a mensagem “Por favor, informe ao menos duas opções de resposta em cada coluna.”;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo A8, fluxo 3;</li>
+</ol>
+<strong>E5.</strong>A questão certo ou errado deve ter ao menos uma frase informada. 
+<ol>
+	<li> O ambiente verifica que o campo Enunciado não foi preenchido e retorna a mensagem “Por favor, informe ao menos uma frase para salvar a nova tarefa.”;</li>
+	<li>O ambiente destaca o campo Enunciado de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 1, fluxo 2.</li>
+</ol>
+<strong>E6.</strong>Os campos obrigatórios estão em branco para imprimir a questão Associativa.     
+
+<ol>
+	<li>O ambiente verifica que os campos obrigatórios não foram preenchidos e retorna a mensagem “Por favor, informe o campo Enunciado e ao menos duas opções de resposta em cada coluna para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca os campos Enunciado e opções de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 8, fluxo 3.</li>
+</ol>
+<strong>E7.</strong>Os campos obrigatórios estão em branco para imprimir a questão Certo ou Errado. 
+<ol>
+	<li>O ambiente verifica que os campos obrigatórios não foram preenchidos e retorna a mensagem “Por favor, informe o campo Enunciado e ao menos uma frase para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca os campos Enunciado e frase de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 1, fluxo 3.</li>
+</ol>
+<strong>E8.</strong>Os campos obrigatórios estão em branco para imprimir a questão Complete ou Destaque de Palavras. 
+<ol>
+	<li>O ambiente verifica que os campos obrigatórios não foram preenchidos e retorna a mensagem “Por favor, informe os campos Enunciado e Texto para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca os campos Enunciado e Texto de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 5, fluxo 3 ou Fluxo Alternativo 10, fluxo 3.</li>
+</ol>
+<strong>E9.</strong>Os campos obrigatórios estão em branco para imprimir a questão Dissertativa ou Resposta Curta. 
+<ol>
+	<li>  O ambiente verifica que o campo obrigatório não foi preenchido e retorna a mensagem “Por favor, informe o campo Enunciado para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca o campo Enunciado de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 6 ou Fluxo Alternativo 2, fluxo 3.</li>
+</ol>
+<strong>E10.</strong>Os campos obrigatórios estão em branco para imprimir a questão Múltipla Escolha. 
+<ol>
+	<li>O ambiente verifica que os campos obrigatórios não foram preenchidos e retorna a mensagem “Por favor, informe os campos Enunciado e ao menos duas opções de resposta para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca os campos Enunciado e opções de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 3, fluxo 3.</li>
+</ol>
+<strong>E11.</strong>O campo Texto esta em branco para retirar a pontuação na questão Complete. 
+<ol>
+	<li>O ambiente verifica que o campo Texto não foi preenchido e retorna a mensagem “Por favor, informe o campo Texto para retirar a pontuação.”;</li>
+	<li>O ambiente destaca o campo Texto de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 5, fluxo 3.</li>
+</ol>
+<strong>E12.</strong>O campo Texto esta em branco para retirar a acentuação na questão Complete. 
+<ol>
+	<li>O ambiente verifica que o campo Texto não foi preenchido e retorna a mensagem “Por favor, informe o campo Texto para retirar a acentuação.”;</li>
+	<li>O ambiente destaca o campo Texto de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 6.</li>
+</ol>
+<strong>E13.</strong>O campo Texto esta em branco para retirar palavras na questão Complete. 
+<ol>
+	<li>O ambiente verifica que o campo Texto não foi preenchido e retorna a mensagem “Por favor, informe o campo Texto para retirar palavras.”;</li>
+	<li>O ambiente destaca o campo Texto de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 7.</li>
+</ol>
+
+
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingEighteen">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+         UC18: Editar Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEighteen">
+      <div class="panel-body">
+<strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Editar uma tarefa. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+		<li>Uma unidade devidamente cadastrada no ambiente deve estar aberta.</li>
+		<li>Um material motivador devidamente cadastrado no ambiente deve estar aberto.</li>
+</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar as edições feitas nas tarefas do material motivador. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>    
+	<li>O ambiente apresenta a tela Material Motivador;</li>
+	<li>O professor deve clicar no botão “Editar” associado a uma tarefa; <strong>A1.</strong></li>
+	<li>O ambiente  exibe na tela os campos da questão em modo editável;</li>
+	<li>O professor preenche os campos que deseja editar e pressiona o botão “Salvar Tarefa”; <strong>A2. E1. E2. E3. E4. E5.</strong></li>
+	<li>O ambiente salva as edições feitas na tarefa e exibe a mensagem “Tarefa salva com sucesso.”</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>O professor deseja imprimir todas as tarefas associadas ao material motivador.
+<ol>
+	<li>O professor pressiona o botão “Imprimir Todas as Tarefas”;</li>
+	<li>O ambiente monta um documento com todas as tarefas associadas ao material motivador aberto para que o professor possa imprimir as tarefas;</li>
+	<li> O caso de uso é finalizado.</li>
+</ol>
+<strong>A2.</strong>O professor deseja imprimir a tarefa.
+<ol>
+	<li>O professor pressiona o botão “Imprimir Tarefa”;<strong>E6. E7. E8. E9. E10.</strong></li>
+	<li>O ambiente monta um documento com os campos da questão para que o professor possa imprimir a tarefa;</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>
+<strong>Fluxos de Eventos</strong> Exceções</br>
+<strong>E1.</strong>O campo Enunciado está em branco. 
+<ol>
+	<li>O ambiente verifica que o campo Enunciado não foi preenchido e retorna a mensagem “Por favor, informe o campo Enunciado para salvar as edições.”;</li>
+	<li>O ambiente destaca o campo Enunciado de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4.</li>
+</ol>	
+<strong>E2.</strong>A questão múltipla escolha deve ter ao menos duas opções. 
+<ol>
+	<li>O ambiente verifica que o tipo da questão é múltipla escolha e que tem menos de duas opções de resposta; </li>
+	<li>O ambiente retorna a mensagem “Por favor, informe ao menos duas opções de resposta.”;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4.</li>
+</ol>	
+<strong>E3.</strong>O campo Texto está em branco. 
+<ol>
+	<li>O ambiente verifica que o tipo da questão é complete ou destacar palavras, que o campo Texto não foi preenchido e retorna a mensagem “Por favor, informe o campo Texto  para salvar as alterações.”;</li>
+	<li>O ambiente destaca o campo Texto de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4.</li>
+</ol>	
+<strong>E4.</strong>A questão associativa deve ter ao menos duas opções em cada coluna. 
+<ol>
+	<li>O ambiente verifica que o tipo da questão é associativa, tem menos de duas opções em cada coluna e retorna a mensagem “Por favor, informe ao menos duas opções de resposta em cada coluna.”;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4.</li>
+</ol>	
+<strong>E5.</strong>A questão certo ou errado deve ter ao menos uma frase informada. 
+<ol>
+	<li>O ambiente verifica que o campo Enunciado não foi preenchido e retorna a mensagem “Por favor, informe ao menos uma frase para salvar a nova tarefa.”;</li>
+	<li>O ambiente destaca o campo Enunciado de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 4.</li>
+</ol>	
+<strong>E6.</strong>Os campos obrigatórios estão em branco para imprimir a questão Associativa.    
+<ol>
+	<li>O ambiente verifica que os campos obrigatórios não foram preenchidos e retorna a mensagem “Por favor, informe o campo Enunciado e ao menos duas opções de resposta em cada coluna para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca os campos Enunciado e opções de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 8, fluxo 3.</li>
+</ol>	
+<strong>E7.</strong>Os campos obrigatórios estão em branco para imprimir a questão Certo ou Errado. 
+<ol>
+	<li>O ambiente verifica que os campos obrigatórios não foram preenchidos e retorna a mensagem “Por favor, informe o campo Enunciado e ao menos uma frase para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca os campos Enunciado e frase de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 1, fluxo 3.</li>
+</ol>	
+<strong>E8.</strong>Os campos obrigatórios estão em branco para imprimir a questão Complete ou Destaque de Palavras. 
+<ol>
+	<li>O ambiente verifica que os campos obrigatórios não foram preenchidos e retorna a mensagem “Por favor, informe os campos Enunciado e Texto para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca os campos Enunciado e Texto de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 5, fluxo 3 ou Fluxo Alternativo 10, fluxo 3.</li>
+</ol>	
+<strong>E9.</strong>Os campos obrigatórios estão em branco para imprimir a questão Dissertativa ou Resposta Curta. 
+<ol>
+	<li> O ambiente verifica que o campo obrigatório não foi preenchido e retorna a mensagem “Por favor, informe o campo Enunciado para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca o campo Enunciado de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Principal 6 ou Fluxo Alternativo 2, fluxo 3.</li>
+</ol>	
+<strong>E10.</strong>Os campos obrigatórios estão em branco para imprimir a questão Múltipla Escolha. 
+<ol>
+	<li>O ambiente verifica que os campos obrigatórios não foram preenchidos e retorna a mensagem “Por favor, informe os campos Enunciado e ao menos duas opções de resposta para imprimir a tarefa.”;</li>
+	<li>O ambiente destaca os campos Enunciado e opções de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo 3, fluxo 3.</li>
+</ol>	
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingNineteen">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+          UC19: Excluir Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNineteen">
+      <div class="panel-body">
+  <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Excluir uma tarefa.  </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+		<li>Uma unidade devidamente cadastrada no ambiente deve estar aberta.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li> Excluir uma tarefa vinculada a um material motivador. </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O ambiente apresenta a tela Material Motivador com a lista de tarefas relacionados ao material;</li>
+	<li>O professor pressiona o botão “Excluir” vinculado a tarefa;</li>
+	<li>O ambiente apresenta a mensagem “Deseja realmente excluir esta tarefa?”</li>
+	<li>O professor pressiona o botão “Sim”; <strong>A1.</strong></li>
+	<li>O ambiente exclui a tarefa, redireciona o professor para a tela Material Motivador e mostra a mensagem “A Tarefa foi excluída com sucesso.”.</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong> O professor não deseja mais excluir a tarefa.
+<ol>
+	<li>O professor pressiona o botão  “Não”;</li>
+    <li>O ambiente redireciona o professor para a tela Material Motivador.</li>
+    <li>O caso de uso é finalizado. </li>
+</ol>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    <br>
+        Não se aplica. <br>
+        <br>
+   </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwenty">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+          UC20: Corrigir Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwenty">
+      <div class="panel-body">
+  <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Corrigir as tarefas realizadas pelos alunos. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+		<li>Uma unidade devidamente cadastrada no ambiente deve estar aberta.</li>
+		<li>O material motivador devidamente cadastrado no ambiente deve estar aberto.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar as correções realizadas pelo professor.  </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O professor pressiona o botão “Corrigir Tarefas”;</li>
+	<li>O ambiente apresenta a tela Correção de Tarefas; <strong>A1.</strong></li>
+	<li>O professor clica no enunciado da tarefa que deseja corrigir;</li>
+	<li>O ambiente apresenta a tela “Correção da Tarefa”;</li>
+	<li>O professor preenche o campo Correção e Nota para cada resposta da tarefa e pressiona o botão “Salvar Correções”; <strong>A2. E1.</strong></li>
+	<li>O ambiente salva a correção da tarefa, redireciona o professor para a tela "Correção de Tarefas" e exibe a mensagem “As correções foram salvas com sucesso” e apresenta a tela Correção de Tarefas;</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>O projeto que está aberto, está vinculado a mais de uma turma em que o professor leciona. 
+ <ol>
+	<li>O ambiente apresenta na tela o campo  Escola;</li>
+	<li>O professor seleciona uma escola no campo Escola;</li>
+	<li>O ambiente apresenta o campo Turma;</li>
+	<li>O professor seleciona uma turma;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 2. </li>
+</ol>	
+<strong>A2.</strong>O professor deseja continuar a correção das tarefas.
+<ol>
+	<li>O professor preenche o campo Correção e Nota para cada resposta da tarefa e pressiona o botão “Continuar Correções”;</li>
+	<li>O ambiente carrega a tela “Correção da Tarefa” com as respostas da próxima tarefa;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+<strong>E1.</strong>O campo Nota está em branco. 
+<ol>
+	<li>O ambiente verifica que o campo Nota não foi preenchido e retorna a mensagem “Por favor, informe o campo Nota para salvar as correções.”; </li>
+	<li>O ambiente destaca o campo Nota de vermelho e negrito;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 5. </li>
+</ol>
+ </div>
+    </div>
+  </div>
+    
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwentyone">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone">
+         UC21: Realizar Tarefa
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwentyone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyone">
+      <div class="panel-body">
+  <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Realizar as tarefas disponibilizadas pelo professor. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O aluno é quem está autenticado no ambiente.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar as respostas do aluno para cada tarefa. </li>
+	</ul>
+<strong>Ator Primário</strong>  Aluno<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O ambiente apresenta a tela com a lista de projetos associados a turma que o aluno estuda;</li>
+	<li>O aluno clica no projeto que deseja;</li>
+	<li>O ambiente abre o projeto e exibe a lista de unidades associadas a este projeto;</li>
+	<li>O aluno clica na unidade que deseja;</li>
+	<li>O ambiente abre a unidade e exibe a lista de materiais motivadores associados a unidade;</li>
+	<li>O aluno clica no material motivador que deseja;</li>
+	<li>O ambiente apresenta a tela do material motivador e as tarefas relacionadas a ele;</li>
+	<li>O aluno preenche o campo Resposta para as questões dissertativas e de resposta curta, seleciona a opção correta das questões  de múltipla escolha e de certo ou errado, destaca as palavras utilizando cor de fundo de fonte nas questões de destaque de palavras, associa as opções das questões associativas e completa o texto das questões de complete; </li>
+	<li>O aluno pressiona o botão “Salvar Respostas”;<strong>A1. A2. A3. A4. A5. A6. A7. A8. A9. A10. A11. A12. A13. A14. A15. A16. A17. A18. A19. A20. A21. A22. A23. A24. A25. A26. A27. A28. A29. A30. A31. A32. A33. E1.</strong></li>
+	<li>O ambiente salva as respostas preenchidas pelo aluno e apresenta a mensagem “As respostas foram salvas com sucesso.” e redireciona o aluno para a tela dos materiais motivadores; </li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+<strong>A1.</strong>Na questão Dissertativa o aluno deseja adicionar a formatação de texto: Itálico, Negrito ou Sublinhado. 
+<ol>
+	<li>O aluno seleciona a parte do texto que deseja formatar e pressiona o botão “Itálico”, “Negrito” ou “Sublinhado”;</li>
+	<li>O ambiente formata o texto selecionado de acordo com o botão pressionado pelo aluno;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A2.</strong> Na questão Dissertativa o aluno deseja retirar do texto a formatação Itálico, Negrito ou Sublinhado. 
+<ol>
+	<li>O aluno seleciona a parte do texto que deseja retirar a formatação e pressiona o botão “Itálico”, “Negrito” ou “Sublinhado”;</li>
+	<li>O ambiente retira a formatação do texto;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A3.</strong>Na questão Dissertativa o aluno deseja iniciar a escrita de um texto com a formatação: Itálico, Negrito ou Sublinhado. 
+<ol>
+	<li>O aluno pressiona o botão “Itálico” “Negrito” ou “Sublinhado” e inicia a escrita do texto;</li>
+	<li>O ambiente escreve o texto com a formatação que o aluno indicou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A4.</strong>Na questão Dissertativa o aluno deseja mudar a cor da fonte do texto. 
+<ol>
+	<li>O aluno seleciona a parte do texto que deseja modificar a cor da fonte e seleciona uma cor no campo Cor de Fonte;</li>
+	<li>O ambiente altera a cor da fonte do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A5.</strong>Na questão Dissertativa o aluno deseja iniciar a escrita do texto com uma cor de fonte especifica.
+<ol>
+	<li>O aluno seleciona a cor que deseja no campo Cor de Fonte e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com a cor que o aluno selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A6.</strong>Na questão Dissertativa o aluno deseja mudar o tamanho da fonte do texto. 
+<ol>
+	<li> O aluno seleciona a parte do texto que deseja mudar o tamanho da fonte e seleciona o tamanho de fonte que deseja no campo Tamanho de Fonte;</li>
+	<li>O ambiente altera o tamanho da fonte do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9.</li>
+</ol>	
+<strong>A7.</strong> Na questão Dissertativa o aluno deseja iniciar a escrita do texto com um tamanho de fonte especifico.
+<ol>
+	<li>O aluno seleciona o tamanho de fonte que deseja no campo Tamanho de Fonte e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com o tamanho da fonte que o aluno selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9.</li>
+</ol>	
+<strong>A8.</strong>Na questão Dissertativa o aluno deseja mudar a fonte do texto. 
+<ol>
+	<li>O aluno seleciona a parte do texto que deseja mudar a fonte e seleciona a fonte que deseja no campo Fonte;</li>
+	<li>O ambiente altera a fonte do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A9.</strong>Na questão Dissertativa o aluno deseja iniciar a escrita do texto com uma fonte especifica.
+<ol>
+	<li>O aluno seleciona a fonte que deseja no campo Fonte e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com a fonte que o aluno selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A10.</strong>Na questão Dissertativa o aluno deseja mudar a cor de fundo do texto. 
+<ol>
+	<li>O aluno seleciona a parte do texto que deseja mudar a cor de fundo e seleciona a cor que deseja no campo Cor de Fundo;</li>
+	<li>O ambiente altera a cor de fundo do texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A11.</strong>Na questão Dissertativa o aluno deseja iniciar a escrita do texto com uma cor de fundo especifica.
+<ol>
+	<li>O aluno seleciona a cor de fundo que deseja no campo Cor de Fundo e inicia a escrita do texto;</li>
+	<li>O ambiente exibe o texto escrito de acordo com a cor de fundo que o aluno selecionou;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A12.</strong>Na questão Dissertativa o aluno deseja alinhar o texto à esquerda, à direita ou ao centro. 
+<ol>
+	<li>O aluno seleciona a parte do texto que deseja alinhar e pressiona o botão “Alinhar à Esquerda” ou “Alinhar à Direita” ou “Centralizar”;</li>
+	<li>O ambiente alinha o texto selecionado de acordo com o botão pressionado pelo aluno;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A13.</strong>Na questão Dissertativa o aluno deseja escrever um texto alinhado à esquerda, à direita ou ao centro. 
+<ol>
+	<li>O aluno pressiona o botão “Alinhar à Esquerda”, “Alinhar à Direita” ou “Centralizar” e inicia a escrita do texto;</li>
+	<li>O ambiente alinha o texto escrito de acordo com o botão pressionado pelo aluno;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A14.</strong>Na questão Dissertativa o aluno deseja justificar o texto. 
+<ol>
+	<li>O aluno seleciona a parte do texto que deseja justificar e pressiona o botão “Justificar”;</li>
+	<li>O ambiente justifica o texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A15.</strong>Na questão Dissertativa o aluno deseja escrever um texto justificado. 
+<ol>
+	<li>O aluno pressiona o botão “Justificar” e inicia a escrita do texto;</li>
+	<li>O ambiente apresenta o texto justificado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A16.</strong>Na questão Dissertativa o aluno deseja colar o texto que foi copiado ou recortado.
+<ol>
+	<li>O aluno posiciona o cursor onde deseja colar o texto e pressiona o botão “Colar” ou pressiona as teclas “CTRL” e “V”;</li>
+	<li>O ambiente cola o texto no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A17.</strong>Na questão Dissertativa o aluno deseja recortar o texto 
+<ol>
+	<li>O aluno seleciona a parte do texto que deseja recortar e pressiona o botão “Recortar” ou pressiona as teclas “CTRL” e “X”;</li>
+	<li>O ambiente recorta o texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A16.  </li>
+</ol>	
+<strong>A18.</strong>Na questão Dissertativa o aluno deseja copiar o texto. 
+<ol>
+	<li>O aluno seleciona a parte do texto que deseja copiar e pressiona o botão “Copiar” ou pressiona as teclas “CTRL” e “C”;</li>
+	<li>O ambiente copia o texto selecionado;</li>
+	<li>O caso de uso retorna ao Fluxo Alternativo A16. </li>
+</ol>	
+<strong>A19.</strong>Na questão Dissertativa o aluno deseja utilizar o marcador bullets ou numérico no texto. 
+<ol>
+	<li>O aluno posiciona o cursor onde deseja colocar o marcador de texto e pressiona o botão “Marcador Bullets” ou ”Marador Numérico” ;</li>
+	<li>O ambiente adiciona um marcador de texto no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. <strong>A20.</strong></li>
+</ol>	
+<strong>A20.</strong>Na questão Dissertativa o aluno deseja adicionar uma sequência de marcadores.
+<ol>
+	<li>O aluno posiciona o cursor no fim do texto escrito no marcador e pressiona a tecla “Enter”;</li>
+	<li>O ambiente adiciona um marcado embaixo do marcador anterior;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9.</li>
+</ol>	
+<strong>A21.</strong>Na questão Dissertativa o aluno deseja adicionar uma imagem ao texto. 
+<ol>
+	<li>O aluno posiciona o cursor onde deseja inserir a imagem, pressiona o botão “Inserir Imagem”, seleciona a imagem dentro das pastas contidas no computador e pressiona o botão “Abrir”;</li>
+	<li>O ambiente adiciona a imagem no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. <strong>A22. A23.</strong></li>
+</ol>	
+<strong>A22.</strong>Na questão Dissertativa o aluno deseja alterar uma imagem de posição no texto. 
+<ol>
+	<li>O aluno clica em cima da imagem deseja, pressiona o botão esquerdo do mouse e arrasta a imagem para o local desejado;</li>
+	<li>O ambiente altera a posição da imagem para o local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9.</li>
+</ol>	
+<strong>A23.</strong>Na questão Dissertativa o aluno deseja alterar o tamanho da imagem. 
+<ol>
+	<li>O aluno clica em cima de um dos oito pontos encontrados na borda da imagem, pressiona o botão esquerdo do mouse e arrasta o cursor até chegar ao tamanho desejado para a imagem;</li>
+	<li>O ambiente altera o tamanho da imagem;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9.</li>
+</ol>	
+<strong>A24.</strong>Na questão Dissertativa o aluno deseja adicionar um arquivo ao texto no formato PDF (Portable Document Format), DOC (Document) ou ODT (OpenDocument). 
+<ol>
+	<li>O aluno posiciona o cursor onde deseja inserir o arquivo, pressiona o botão “Inserir Arquivo”, seleciona um arquivo dentro das pastas contidas no computador e pressiona o botão “Abrir”;</li>
+	<li>O ambiente adiciona o arquivo no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A25.</strong>Na questão Dissertativa o aluno deseja adicionar um elemento hipermídia (lin}) ao texto. 
+<ol>
+	<li>O aluno posiciona o cursor onde deseja inserir o elemento hipermídia, pressiona o botão ”Inserir Link”;</li>
+	<li>O ambiente abre uma pequena janela onde o aluno deve informar os dados sobre o link;</li>
+	<li>O aluno preenche os campos URL e Título do Link e pressiona o botão “Inserir Link”;</li>
+	<li>O ambiente insere o link no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A26.</strong>Na questão Dissertativa o aluno deseja adicionar uma tabela ao texto. 
+<ol>
+	<li>O aluno posiciona o cursor onde deseja inserir a tabela e pressiona o botão ”Inserir Tabela”;</li>
+	<li>O ambiente abre uma pequena janela onde o aluno deve informar os dados sobre a tabela;</li>
+	<li>O aluno preenche os campos Coluna e Linhas e pressionar o botão “Inserir Tabela”; <strong>E4. E5.</strong></li>
+	<li>O ambiente insere uma tabela no local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A27.</strong>Na questão Dissertativa o aluno deseja adicionar uma linha ou coluna na tabela. 
+<ol>
+	<li>O aluno clica com o botão direito do mouse dentro da tabela.</li>
+	<li>O ambiente abre um menu com as opções “Adicionar Linha”, “Adicionar Coluna”, “Excluir Linha” e “Excluir Coluna”;</li>
+	<li>O aluno escolhe a opção “Adicionar Linha” ou “Adicionar Coluna”;</li>
+	<li>O ambiente abre uma janela para o aluno preencher os dados da inserção;</li>
+	<li>O aluno preenche os campos Quantidade e Posição (Antes ou Depois);</li>
+	<li>O ambiente adiciona uma linha ou coluna de acordo com os dados fornecidos pelo aluno;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A28.</strong>Na questão Dissertativa o aluno deseja excluir uma linha ou coluna da tabela. 
+<ol>
+	<li>O aluno clica com o botão direito do mouse dentro da tabela na coluna ou linha que deseja excluir;</li>
+	<li>O ambiente abre um menu com as opções “Adicionar Linha”, “Adicionar Coluna”, “Excluir Linha” e “Excluir Coluna”;</li>
+	<li>O aluno escolhe a opção “Excluir Linha” ou “Excluir Coluna”;</li>
+	<li>O ambiente exclui a linha ou coluna que o cursor está posicionado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. </li>
+</ol>	
+<strong>A29.</strong>Na questão Dissertativa o aluno deseja iniciar a escrita do texto com marcador bullets ou numérico. 
+<ol>
+	<li>O aluno pressiona o botão “Marcador Bullets” ou ”Marador Numérico”;</li>
+	<li>O ambiente adiciona um marcado no texto;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9.</li>
+</ol>	
+<strong>A30.</strong>Na questão Dissertativa o aluno deseja adicionar um quadro ao texto. 
+<ol>
+	<li>O aluno posiciona o cursor onde deseja inserir o quadro, pressiona o botão “Inserir Quadro”;</li>
+	<li>O ambiente adiciona o quadro no local indicado;</li>
+	<li>O aluno adiciona texto dentro do quadro;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9. <strong>A31. A32.</strong></li>
+</ol>	
+<strong>A31.</strong>Na questão Dissertativa o aluno deseja alterar um quadro de posição no texto. 
+<ol>
+	<li>O aluno clica em cima do quadro, pressiona o botão esquerdo do mouse e arrasta o quadro para o local desejado;</li>
+	<li>O ambiente altera a posição do quadro para o local indicado;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9.</li>
+</ol>	
+<strong>A32.</strong>Na questão Dissertativa o aluno deseja alterar o tamanho do quadro. 
+<ol>
+	<li>O aluno clica em cima de um dos oito pontos encontrados na borda do quadro, pressiona o botão esquerdo do mouse e arrasta o cursor até chegar ao tamanho desejado para o quadro;</li>
+	<li>O ambiente modifica o tamanho do quadro;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 9.</li>
+</ol>	
+<strong>A33.</strong>Na questão Dissertativa o aluno deseja um novo documento. 
+<ol>
+	<li>O aluno pressiona o botão “Novo Documento”;</li>
+	<li>O ambiente limpa o campo Resposta;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 8.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Exceções<br>
+<strong>E1.</strong>Tarefa não foi realizada. 
+<ol>
+	<li>O ambiente verifica que algumas tarefas não foram realizadas pelo aluno, exibe a mensagem “Para salvar as respostas todas as tarefas devem ser realizadas.” e destaca a tarefa de vermelho e negrito; </li>
+	<li> O caso de uso é finalizado. </li>
+</ol>
+    </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwentytwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">
+          UC22: Criar Dicionário
+        </a>
+      </h4> 
+    </div>
+    <div id="collapseTwentytwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentytwo">
+      <div class="panel-body">
+  <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Criar dicionários de palavras. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+		<li>O professor é quem está autenticado no ambiente.</li>
+		<li>Um projeto devidamente cadastrado no ambiente deve estar aberto.</li>
+		<li>Uma unidade devidamente cadastrada no ambiente deve estar aberta.</li>
+		<li>O material motivador devidamente cadastrado no ambiente deve estar aberto.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Salvar ou imprimir o dicionário de palavras.  </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O professor pressiona o botão “Criar Dicionário”;</li>
+	<li>O ambiente apresenta a tela Criar Dicionário com uma lista das palavras do texto em ordem alfabética; </li>
+	<li>O professor pressiona o botão “Salvar Dicionário”; <strong>A1. A2. A3.</strong></li>
+	<li>O ambiente salva o dicionário do material motivador, redireciona o professor para a tela "Material Motivador" e exibe a mensagem “O dicionário foi salvo com sucesso”;</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+
+<strong>Fluxos de Eventos</strong> Alternativos<br>
+<strong>A1.</strong>O professor deseja imprimir o dicionário. 
+<ol>
+	<li>O professor pressiona o botão "Imprimir Dicionário";</li>
+	<li>O ambiente monta um documento com o campo título do material motivador e com a lista de palavras do dicionário para que o professor possa imprimir;</li>
+	<li>O caso de uso é finalizado. </li>
+</ol>	
+<strong>A2.</strong>O professor deseja criar um dicionário a partir do sufixo informado. 
+<ol>
+	<li>O professor informa o campo sufixo e pressiona o botão "Buscar por Sufixo"; <strong>E1.</strong></li>
+	<li>O ambiente monta o dicionário com as palavras que tem o sufixo informado pelo professor;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 3.</li>
+</ol>	
+<strong>A3.</strong> O professor deseja criar um dicionário a partir do prefixo informado. 
+<ol>
+	<li>O professor informa o campo prefixo e pressiona o botão "Buscar por Prefixo"; <strong>E2.</strong></li>
+	<li>O ambiente monta o dicionário com as palavras que tem o prefixo informado pelo professor;</li>
+	<li>O caso de uso retorna ao Fluxo Principal 3.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Exceções<br>
+<strong>E1.</strong>O campo Sufixo está em branco. 
+<ol>
+	<li>O ambiente verifica que o campo Sufixo não foi preenchido e o professor pressionou o botão "Buscar por Sufixo" e retorna a mensagem “Por favor, informe o campo Sufixo para montar o dicionário.”; </li>
+	<li>O ambiente destaca o campo Sufixo de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo A2, fluxo 2.</li>
+</ol>	
+<strong>E2.</strong>O campo Prefixo está em branco. 
+<ol>
+	<li>O ambiente verifica que o campo Prefixo não foi preenchido e o professor pressionou o botão "Buscar por Prefixo" e retorna a mensagem “Por favor, informe o campo Prefixo para montar o dicionário.”; </li>
+	<li>O ambiente destaca o campo Sufixo de vermelho e negrito;</li>
+	<li>O caso de uso retorna para o Fluxo Alternativo A3, fluxo 2. </li>
+</ol>	
+    </div>
+    </div>
+  </div>
+ <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwentyThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">
+          UC23: Consultar Ajuda
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwentyThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyThree">
+      <div class="panel-body">
+  <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Consultar a ajuda.  </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Exibir a tela de ajuda.   </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor e aluno<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O ator clica no menu "Ajuda";</li>
+	<li>O ambiente apresenta a tela Ajuda de acordo com o ator autenticado;</li>
+
+<li>O ator esolhe a parte do ambiente que necessita de ajuda</li>
+<li>O ambiente apresenta a lista de funcionalidades associadas a parte escolhida pelo ator;</li>
+<li>O ator escolhe uma funcionalidade;</li>
+<li>O ambiente aprsenta a tela com a ajuda referente a funcionalidade escolhida pelo ator;</li>	<li>O caso de uso é finalizado.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+       <br>
+        Não se aplica. <br>
+        <br>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    <br>
+        Não se aplica. <br>
+        <br>
+
+    </div>
+    </div>
+
+
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwentyFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
+          UC24: Listar Projetos Publicados
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwentyFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyFour">
+      <div class="panel-body">
+  <strong>Descrição</strong> Este caso de uso é iniciado pelo professor quando for necessário:
+	<ul>
+		<li>Listas os projetos recentemente publicados por outros professores. </li>
+	</ul>	
+<strong>Pré-condições</strong>    Este caso de uso pode iniciar somente se:	 
+<ul>
+		<li>O ambiente tiver executado o UC01 – Acesso do usuário.</li>
+	</ul>	
+           
+<strong>Pós-condições</strong>  Após o final normal deste caso de uso o ambiente deve:
+    <ul>
+		<li>Exibir a lista de projetos recentemente publicados por outros professores.    </li>
+	</ul>
+<strong>Ator Primário</strong>  Professor<br>
+<strong>Fluxos de Eventos</strong> Principais <br>
+<ol>
+	<li>O professor clica no menu Projetos Publicados;</li>
+	<li>O ambiente apresenta a tela "Projetos Publicados" com a lista de projetos publicados recentemente;</li>
+	<li>O professor escolhe o projeto que deseja visualizar;</li>
+	<li>O ambiente exibe a tela do projeto escolhido pelo professor;</li>
+	<li>O caso de uso é finalizado.</li>
+</ol>	
+<strong>Fluxos de Eventos</strong> Alternativos <br>
+       <br>
+        Não se aplica. <br>
+        <br>
+<strong>Fluxos de Eventos</strong> Exceções<br>
+    <br>
+        Não se aplica. <br>
+        <br>
+
+    </div>
+    </div>
+
+</div>
+</div>
+</font>
+</body>
+</html>
